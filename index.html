@@ -43,8 +43,8 @@
                     </ul>
                 </div>
                 <div>
-                <a href="https://kirov.hh.ru/resume/4571cb95ff0af2393b0039ed1f6d3768455430"><img style="filter: grayscale(1);" class="img-fluid img_logo" src="static/img/hh.svg" alt="HH"></a>
-                <a href="https://career.habr.com/alex_kozlov91"><img class="img-fluid img_logo" src="static/img/habr.png" alt="Хабр карьера"></a>
+                <a href="https://kirov.hh.ru/resume/4571cb95ff0af2393b0039ed1f6d3768455430"><img class="img-fluid img_logo_hh" src="static/img/hh.svg" alt="HH"></a>
+                <a href="https://career.habr.com/alex_kozlov91"><img class="img-fluid img_logo_habr" src="static/img/habr.png" alt="Хабр карьера"></a>
                 </div>
             </div>
         </div>
@@ -302,30 +302,18 @@
                             <span>Июль 2022 — <br>Март 2023</span>
                         </div>
                         <div class="exp_info">
-                            <a role="button" style="float: right;" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#Modal1">Подробнее</a>
-                            <p><a href="https://machaon.ru/"><span class="text-uppercase fs-5 fw-bold">Machaon</span></a><br>
-                            <span><b>Тестировщик ПО</b></span></p>
-                            <p>Тестирование b2b решений, интеграционных сервисов<br>
-                                Составление тестовой документации<br>
-                                Оформление дефектов в баг-трекинговой системе
-                            </p>
-                        </div>
-                        <div class="modal fade" id="Modal1" tabindex="-1" data-bs-backdrop="static" aria-labelledby="ModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered modal-lg">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5">MACHAON</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="card mb-3">
-                                            <div class="card-body" >
-                                                <img class="modal_img img-fluid" src="static/img/mfua.png" alt="МФЮА">
-                                                <ul>
-                                                    <li>Обеспечение качества разработки новой версии сайта университета МФЮА</li>
-                                                    <li>Портал реализован на 1С-Битрикс, для более глубокого тестирования была изучена система и получены сертификаты</li>
-                                                    <li>Проверка верстки (дизайн в Figma), функционала, поиск багов</li>
-                                                </ul>
+                            <a role="button" style="float: right;" class="btn btn-link" data-fancybox data-src="#dialog1">Подробнее</a>
+
+                            <div class="modal-body" id="dialog1" style="display:none;max-width:800px;">
+                               <h1 class="modal-title fs-5">MACHAON</h1>
+                                <div class="card mb-3">
+                                    <div class="card-body" >
+                                        <img class="modal_img img-fluid" src="static/img/mfua.png" alt="МФЮА">
+                                        <ul>
+                                            <li>Обеспечение качества разработки новой версии сайта университета МФЮА</li>
+                                            <li>Портал реализован на 1С-Битрикс, для более глубокого тестирования была изучена система и получены сертификаты</li>
+                                            <li>Проверка верстки (дизайн в Figma), функционала, поиск багов</li>
+                                        </ul>
                                             </div>
                                         </div>
                                         <div class="card mb-3">
@@ -367,50 +355,43 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Понятно</button>
-                                    </div>
-                                </div>
                             </div>
+
+                            <p><a href="https://machaon.ru/"><span class="text-uppercase fs-5 fw-bold">Machaon</span></a><br>
+                            <span><b>Тестировщик ПО</b></span></p>
+                            <p>Тестирование b2b решений, интеграционных сервисов<br>
+                                Составление тестовой документации<br>
+                                Оформление дефектов в баг-трекинговой системе
+                            </p>
                         </div>
+
 
 
                         <div class="exp_data">
                             <span>Август 2022 — <br>Сентябрь 2022</span>
                         </div>
                         <div class="exp_info">
-                            <a role="button" style="float: right;" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#Modal2">Подробнее</a>
+                            <a role="button" style="float: right;" class="btn btn-link" data-fancybox data-src="#dialog2">Подробнее</a>
+
+                             <div class="modal-body" id="dialog2" style="display:none;max-width:800px;">
+                               <h1 class="modal-title fs-5">Организация качества</h1>
+                                 <div class="card mb-3">
+                                     <div class="card-body" >
+                                         <img class="modal_img img-fluid" src="static/img/Hoff.svg" alt="Hoff">
+                                         <ul>
+                                             <li>Тестирование мобильного приложения <b>Hoff</b> (гипермаркет мебели и товаров для дома) на мобильном устройстве</li>
+                                             <li>Работа со сниффермом траффика (Fiddler)</li>
+                                             <li>API тестирование с помощью Postman </li>
+                                         </ul>
+                                     </div>
+                                 </div>
+                             </div>
+
                             <p><a href="https://www.itqc.ru/"><span class="text-uppercase fs-5 fw-bold">Организация качества</span></a><br>
                             <span><b>Младший специалист по тестированию</b></span></p>
                             <p>Тестирование мобильных приложений<br>
                                 API тестирование (Postman, Fiddler)
                             </p>
-                        </div>
-                        <div class="modal fade" id="Modal2" tabindex="-1" data-bs-backdrop="static" aria-labelledby="ModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered modal-lg">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5">Организация качества</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="card mb-3">
-                                            <div class="card-body" >
-                                                <img class="modal_img img-fluid" src="static/img/Hoff.svg" alt="Hoff">
-                                                <ul>
-                                                    <li>Тестирование мобильного приложения <b>Hoff</b> (гипермаркет мебели и товаров для дома) на мобильном устройстве</li>
-                                                    <li>Работа со сниффермом траффика (Fiddler)</li>
-                                                    <li>API тестирование с помощью Postman </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Понятно</button>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
 
 
@@ -418,7 +399,22 @@
                             <span>Июль 2022 — <br>Cентябрь 2022</span>
                         </div>
                         <div class="exp_info">
-                            <a role="button" style="float: right;" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#Modal3">Подробнее</a>
+                            <a role="button" style="float: right;" class="btn btn-link" data-fancybox data-src="#dialog3">Подробнее</a>
+
+                            <div class="modal-body" id="dialog3" style="display:none; max-width:800px;">
+                               <h1 class="modal-title fs-5">Яндекс</h1>
+                                <div class="card mb-3">
+                                    <div class="card-body" >
+                                        <img class="modal_img img-fluid" src="static/img/Yandex.svg" alt="Яндекс">
+                                        <ul>
+                                            <li>Тестирование приложений и сайтов экосистемы Яндекс</li>
+                                            <li>Оформление баг-репортов</li>
+                                            <li>Проведение тестирования с помощью фермы устройств</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
                             <p><a href="http://www.yandex.ru"><span class="text-uppercase fs-5 fw-bold">Яндекс</span></a><br>
                             <span><b>Младший специалист ручного тестирования</b></span></p>
                             <p>Тестирование сервисов Яндекса<br>
@@ -426,6 +422,8 @@
                                 Создание тестовых сценариев, чек-листов, инструкций
                             </p>
                         </div>
+
+
                         <div class="modal fade" id="Modal3" tabindex="-1" data-bs-backdrop="static" aria-labelledby="ModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered modal-lg">
                                 <div class="modal-content">
