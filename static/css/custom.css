@@ -157,7 +157,15 @@
         filter: invert(1);
     }
 
+
+    .upload {
+        width: 100%;
+        border: none;
+        background:#414a56;
+    }
+
     .upload:hover {
+        background:#22232b;
 
     }
 
@@ -236,18 +244,10 @@
 
 
 
-
-
-     .bg {
-        background-color: hsl(0, 0%, 90%);
-     }
-
-
-
      .header {
         display: flex;
         align-items: stretch;
-        background-color: #ffc107
+        background-color: hsl(0, 0%, 90%);
 
      }
 
