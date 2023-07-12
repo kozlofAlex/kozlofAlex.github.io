@@ -15,7 +15,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 </head>
+<!--<script>-->
+<!--$().fancybox({-->
+<!--  hideOnOverlayClick : false-->
+<!--});-->
 
+<!--</script>-->
 <body>
 <div class="container">
     <div class="resume">
@@ -79,55 +84,30 @@
                     <hr>
                     <p><i class="fa fa-archive" aria-hidden="true"></i> Примеры работ</p>
                     <div style="height: 30px; margin-bottom: 6px;">
-                        <a role="button" class="btn_work"  data-bs-toggle="modal" data-bs-target="#Modal6" >
-                            <i class="fa fa-file-excel-o fa-fw" aria-hidden="true"></i> Документация
-                        </a>
-                        <div class="modal fade" id="Modal6" tabindex="-1" data-bs-backdrop="static" aria-labelledby="ModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5" style="color: black;">Тестовая документация</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <a target="_blank" href="https://docs.google.com/spreadsheets/d/1ekOHxTi5NUkH3Rg-R19t9hW3ATgcYmeHM5o0SfKrP48/edit?usp=sharing">Портал ГИСОГД РФ</a><br>
-                                        <a target="_blank" href="https://docs.google.com/spreadsheets/d/1XSLXysYEPzcn2ZQx7stjbxF3ymXPbQeKhEBTCcwr4BM/edit?usp=sharing">Форма вывода средств со счета</a><br>
-                                        <a target="_blank" href="https://docs.google.com/spreadsheets/d/1U6TtNCJnedqrt-QXeTbqRx81yCYH32hw3vpDVt7_eIY/edit?usp=sharing">Тестовый стэнд сайта Monge</a><br>
-                                        <a target="_blank" href="https://docs.google.com/spreadsheets/d/1duoCbv6G1kaRiQWd_4oMSMEwf3PxO2jHrazATA9jh2g/edit?usp=sharing">Интерфейс авторизации "Ростелеком ИТ"</a><br>
-                                        <a target="_blank" href="https://docs.google.com/spreadsheets/d/1T-6xBT7Oj_HccjVjizTrZ9DVMdxQYFRwNbpI_iIiBX8/edit?usp=sharing">Тестовые артефакты сайта "Дом питомца"</a><br>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
-                                    </div>
-                                </div>
+                        <a class="btn_work"  role="button"  data-fancybox data-src="#Modal_manual"><i class="fa fa-file-excel-o fa-fw" aria-hidden="true"></i> Документация</a>
+                        <div class="modal-body" id="Modal_manual" style="display:none; max-width:800px;">
+                            <div>
+                                <a target="_blank" href="https://docs.google.com/spreadsheets/d/1ekOHxTi5NUkH3Rg-R19t9hW3ATgcYmeHM5o0SfKrP48/edit?usp=sharing">Портал ГИСОГД РФ</a><br>
+                                <a target="_blank" href="https://docs.google.com/spreadsheets/d/1XSLXysYEPzcn2ZQx7stjbxF3ymXPbQeKhEBTCcwr4BM/edit?usp=sharing">Форма вывода средств со счета</a><br>
+                                <a target="_blank" href="https://docs.google.com/spreadsheets/d/1U6TtNCJnedqrt-QXeTbqRx81yCYH32hw3vpDVt7_eIY/edit?usp=sharing">Тестовый стэнд сайта Monge</a><br>
+                                <a target="_blank" href="https://docs.google.com/spreadsheets/d/1duoCbv6G1kaRiQWd_4oMSMEwf3PxO2jHrazATA9jh2g/edit?usp=sharing">Интерфейс авторизации "Ростелеком ИТ"</a><br>
+                                <a target="_blank" href="https://docs.google.com/spreadsheets/d/1T-6xBT7Oj_HccjVjizTrZ9DVMdxQYFRwNbpI_iIiBX8/edit?usp=sharing">Тестовые артефакты сайта "Дом питомца"</a><br>
                             </div>
                         </div>
                     </div>
 
                     <div style="height: 30px;">
-                        <a class="btn_work"  role="button" data-bs-toggle="modal" data-bs-target="#Modal7">
-                            <i class="fa fa-github fa-fw" aria-hidden="true"></i> Автотесты
-                        </a>
-                        <div class="modal fade" id="Modal7" tabindex="-1" data-bs-backdrop="static" aria-labelledby="ModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5" style="color: black;">Автотесты</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <a target="_blank" href="https://github.com/kozlofAlex/Rostelecom-tests">Тестирование интерфейса авторизации "Ростелеком ИТ"</a><br>
-                                        <a target="_blank" href="https://github.com/kozlofAlex/Telegram-bot">Создание Telegram бота конвертации валют </a><br>
-                                        <a target="_blank" href="https://github.com/kozlofAlex/PetFriens-Testing">Тестирование API сервиса PetFriens</a><br>
-                                        <a target="_blank" href="https://github.com/kozlofAlex/Groall_form">Тестирование формы "Вывод средств со счета"</a><br>
-                                    </div>
-                                        <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
-                                    </div>
+                        <a class="btn_work"  role="button"  data-fancybox data-src="#Modal_auto"><i class="fa fa-github fa-fw" aria-hidden="true"></i> Автотесты</a>
+                        <div class="modal-body" id="Modal_auto" style="display:none; max-width:800px;">
+                            <div>
+                                <a target="_blank" href="https://github.com/kozlofAlex/Rostelecom-tests">Тестирование интерфейса авторизации "Ростелеком ИТ"</a><br>
+                                <a target="_blank" href="https://github.com/kozlofAlex/Telegram-bot">Создание Telegram бота конвертации валют </a><br>
+                                <a target="_blank" href="https://github.com/kozlofAlex/PetFriens-Testing">Тестирование API сервиса PetFriens</a><br>
+                                <a target="_blank" href="https://github.com/kozlofAlex/Groall_form">Тестирование формы "Вывод средств со счета"</a><br>
                             </div>
                         </div>
-                        </div>
                     </div>
+
 
                     <div class="skills">
                         <hr>
@@ -305,8 +285,10 @@
                             <a role="button" style="float: right;" class="btn btn-link" data-fancybox data-src="#dialog1">Подробнее</a>
 
                             <div class="modal-body" id="dialog1" style="display:none;max-width:800px;">
-                               <h1 class="modal-title fs-5">MACHAON</h1>
                                 <div class="card mb-3">
+                                    <div class="card-header">
+                                        <h1 class="modal-title fs-5">MACHAON</h1>
+                                    </div>
                                     <div class="card-body" >
                                         <img class="modal_img img-fluid" src="static/img/mfua.png" alt="МФЮА">
                                         <ul>
@@ -374,8 +356,10 @@
                             <a role="button" style="float: right;" class="btn btn-link" data-fancybox data-src="#dialog2">Подробнее</a>
 
                              <div class="modal-body" id="dialog2" style="display:none;max-width:800px;">
-                               <h1 class="modal-title fs-5">Организация качества</h1>
                                  <div class="card mb-3">
+                                     <div class="card-header">
+                                          <h1 class="modal-title fs-5">Организация качества</h1>
+                                     </div>
                                      <div class="card-body" >
                                          <img class="modal_img img-fluid" src="static/img/Hoff.svg" alt="Hoff">
                                          <ul>
@@ -394,22 +378,21 @@
                             </p>
                         </div>
 
-
                         <div class="exp_data">
                             <span>Июль 2022 — <br>Cентябрь 2022</span>
                         </div>
                         <div class="exp_info">
                             <a role="button" style="float: right;" class="btn btn-link" data-fancybox data-src="#dialog3">Подробнее</a>
-
                             <div class="modal-body" id="dialog3" style="display:none; max-width:800px;">
-                               <h1 class="modal-title fs-5">Яндекс</h1>
                                 <div class="card mb-3">
+                                    <div class="card-header">
+                                    <h1 class="modal-title fs-5">Яндекс</h1>
+                                    </div>
                                     <div class="card-body" >
                                         <img class="modal_img img-fluid" src="static/img/Yandex.svg" alt="Яндекс">
                                         <ul>
-                                            <li>Тестирование приложений и сайтов экосистемы Яндекс</li>
+                                            <li>Тестирование приложений и сайтов экосистемы Яндекс, в том числе с помощью фермы устройств</li>
                                             <li>Оформление баг-репортов</li>
-                                            <li>Проведение тестирования с помощью фермы устройств</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -422,81 +405,45 @@
                                 Создание тестовых сценариев, чек-листов, инструкций
                             </p>
                         </div>
-
-
-                        <div class="modal fade" id="Modal3" tabindex="-1" data-bs-backdrop="static" aria-labelledby="ModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered modal-lg">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5">Яндекс</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="card mb-3">
-                                            <div class="card-body" >
-                                                <img class="modal_img img-fluid" src="static/img/Yandex.svg" alt="Яндекс">
-                                                <ul>
-                                                    <li>Тестирование приложений и сайтов экосистемы Яндекс</li>
-                                                    <li>Оформление баг-репортов</li>
-                                                    <li>Проведение тестирования с помощью фермы устройств</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Понятно</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
 
-                    <h5><a role="button" class="btn btn-link" style="padding: 0;" data-bs-toggle="modal" data-bs-target="#Modal4">Предыдущие места работы</a></h5>
-                    <div class="modal fade" id="Modal4" tabindex="-1" data-bs-backdrop="static" aria-labelledby="ModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered modal-lg">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h1 class="modal-title fs-5">RightCode</h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <div class="card mb-3">
-                                        <div class="card-body" >
-                                            <a href="https://www.right-code.ru/"><img class="modal_img img-fluid" src="static/img/right.png" alt="RightCode"></a>
-                                            <ul>
-                                                <li>Создание и доработка отчётов для гос заказчиков по ТЗ</li>
-                                                <li>Работа с базой данный PostgreSQL</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="card mb-3">
-                                        <div class="card-body" >
-                                            <a href="https://sogaz-med.ru/"><img class="modal_img img-fluid" src="static/img/sogaz.svg" alt="Согаз"></a>
-                                            <ul>
-                                                <li>Формирование статистических отчётов, выборок в базе данных</li>
-                                                <li>Работа с базой данный MS SQL</li>
-                                                <li>Работа с 1С Складской учёт</li>
-                                                <li>Оформление заявок и первичных документов (TESSA)</li>
-                                                <li>Консультирование пользователей по работе системы</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="card mb-3">
-                                        <div class="card-body" >
-                                            <a href="https://www.socialkirov.ru/social/root/uson/Units/IAC.htm"><img class="modal_img img-fluid" src="static/img/inf-analit.png" alt="Информационно-аналитический центр"></a>
-                                            <ul>
-                                                <li>Приемочное тестирование нового функционала системы</li>
-                                                <li>Доработка функционала и контент-менеджмент сайта</li>
-                                                <li>Составление выборок, разработка отчётов, предоставление статистических данных</li>
-                                                <li>Работа с базой данный MS SQL</li>
-                                                <li>Консультирование пользователей, установка и настройка программ</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Понятно</button>
-                                </div>
+
+                    <h5><a role="button" class="btn btn-link" style="padding: 0;" data-fancybox data-src="#dialog4">Предыдущие места работы</a></h5>
+                    <div class="modal-body" id="dialog4" style="display:none; max-width:800px;">
+                        <div class="card mb-3">
+                            <div class="card-header">
+                                <h1 class="modal-title fs-5">Предыдущие места работы</h1>
+                            </div>
+                            <div class="card-body" >
+                                <img class="modal_img img-fluid" src="static/img/right.png" alt="RightCode">
+                                <ul>
+                                    <li>Создание и доработка отчётов для гос заказчиков по ТЗ</li>
+                                    <li>Работа с базой данный PostgreSQL</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card mb-3">
+                            <div class="card-body" >
+                                <img class="modal_img img-fluid" src="static/img/sogaz.svg" alt="Согаз">
+                                <ul>
+                                    <li>Формирование статистических отчётов, выборок в базе данных</li>
+                                    <li>Работа с базой данный MS SQL</li>
+                                    <li>Работа с 1С Складской учёт</li>
+                                    <li>Оформление заявок и первичных документов (TESSA)</li>
+                                    <li>Консультирование пользователей по работе системы</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card mb-3">
+                            <div class="card-body" >
+                                <img class="modal_img img-fluid" src="static/img/inf-analit.png" alt="Информационно-аналитический центр">
+                                <ul>
+                                    <li>Приемочное тестирование нового функционала системы</li>
+                                    <li>Доработка функционала и контент-менеджмент сайта</li>
+                                    <li>Составление выборок, разработка отчётов, предоставление статистических данных</li>
+                                    <li>Работа с базой данный MS SQL</li>
+                                    <li>Консультирование пользователей, установка и настройка программ</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -582,65 +529,61 @@
                     </div>
 
 
-
-                        <h5>
-                        <a class="btn btn-link" style="padding: 0;" role="button" data-bs-toggle="modal" data-bs-target="#Modal5">
+                    <h5><a role="button" class="btn btn-link" style="padding: 0;" data-fancybox data-src="#dialog5">
                         Другие курсы
-                        </a></h5>
-                        <hr>
-                         <div class="modal fade" id="Modal5" tabindex="-1" data-bs-backdrop="static" aria-labelledby="ModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered modal-lg">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5">Сертификаты</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="education">
-                                            <div class="exp_data">
-                                                <span>Декабрь 2022 — <br>Февраль 2023</span><br>
-                                                <div style="display:none">
-                                                    <a data-fancybox="gallery4" href="static/img/1c_adm_mod.jpg"><img class="education_img" src="static/img/1c_adm_mod.jpg" ></a>
-                                                    <a data-fancybox="gallery4" href="static/img/1c_cont_men.jpg"><img class="education_img" src="static/img/1c_cont_men.jpg" ></a>
-                                                    <a data-fancybox="gallery4" href="static/img/1c_mark.jpg"><img class="education_img" src="static/img/1c_mark.jpg" ></a>
-                                                    <a data-fancybox="gallery4" href="static/img/1c_setup.jpg"><img class="education_img" src="static/img/1c_setup.jpg" ></a>
-                                                </div>
-                                            </div>
-                                            <div class="exp_info">
-                                                    <div class="mb-5">
-                                                        <div class="education_info">
-                                                            <p><b>Учреждение:</b> 1С-Битрикс<br>
-                                                                1С-Битрикс «Администратор. Базовый»<br>
-                                                                1С-Битрикс «Администратор. Модули»<br>
-                                                                1С-Битрикс «Контент-менеджер»<br>
-                                                                1С-Битрикс «Продвижение сайта и Маркетинг»<br>
-                                                                1С-Битрикс «Установка и настройка»<br>
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                            </div>
-                                        </div>
-                                            <div >
-                                                <a data-fancybox="gallery4" href="static/img/1c_adm_base.jpg"><img class="education_img" src="static/img/1c_adm_base.jpg"></a>
-                                                <a data-fancybox="gallery4" href="static/img/1c_adm_mod.jpg"><img class="education_img" src="static/img/1c_adm_mod.jpg" ></a>
-                                                <a data-fancybox="gallery4" href="static/img/1c_cont_men.jpg"><img class="education_img" src="static/img/1c_cont_men.jpg" ></a>
-                                                <a data-fancybox="gallery4" href="static/img/1c_mark.jpg"><img class="education_img" src="static/img/1c_mark.jpg" ></a>
-                                                <a data-fancybox="gallery4" href="static/img/1c_setup.jpg"><img class="education_img" src="static/img/1c_setup.jpg" ></a>
-                                            </div>
-                                        </div>
-
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Понятно</button>
-                                    </div>
-                                 </div>
+                        </a>
+                    </h5>
+                    <hr>
+                    <div class="modal-body" id="dialog5" style="display:none; max-width:900px;">
+                        <h1 class="modal-title fs-5">Другие курсы</h1>
+                        <div class="education">
+                            <div class="exp_data">
+                                <span>Декабрь 2022 — <br>Февраль 2023</span><br>
+                                <div style="display:none">
+                                    <a data-fancybox="gallery4" href="static/img/1c_adm_mod.jpg"><img class="education_img" src="static/img/1c_adm_mod.jpg" ></a>
+                                    <a data-fancybox="gallery4" href="static/img/1c_cont_men.jpg"><img class="education_img" src="static/img/1c_cont_men.jpg" ></a>
+                                    <a data-fancybox="gallery4" href="static/img/1c_mark.jpg"><img class="education_img" src="static/img/1c_mark.jpg" ></a>
+                                    <a data-fancybox="gallery4" href="static/img/1c_setup.jpg"><img class="education_img" src="static/img/1c_setup.jpg" ></a>
                                 </div>
                             </div>
-                         </div>
+                            <div class="exp_info">
+                                <div class="mb-5">
+                                    <div class="education_info">
+                                        <p><b>Учреждение:</b> 1С-Битрикс<br>
+                                            1С-Битрикс «Администратор. Базовый»<br>
+                                            1С-Битрикс «Администратор. Модули»<br>
+                                            1С-Битрикс «Контент-менеджер»<br>
+                                            1С-Битрикс «Продвижение сайта и Маркетинг»<br>
+                                            1С-Битрикс «Установка и настройка»<br>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div >
+                            <a data-fancybox="gallery4" href="static/img/1c_adm_base.jpg"><img class="education_img" src="static/img/1c_adm_base.jpg"></a>
+                            <a data-fancybox="gallery4" href="static/img/1c_adm_mod.jpg"><img class="education_img" src="static/img/1c_adm_mod.jpg" ></a>
+                            <a data-fancybox="gallery4" href="static/img/1c_cont_men.jpg"><img class="education_img" src="static/img/1c_cont_men.jpg" ></a>
+                            <a data-fancybox="gallery4" href="static/img/1c_mark.jpg"><img class="education_img" src="static/img/1c_mark.jpg" ></a>
+                            <a data-fancybox="gallery4" href="static/img/1c_setup.jpg"><img class="education_img" src="static/img/1c_setup.jpg" ></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+
+<script>
+$().fancybox({
+  hideOnOverlayClick : false
+});
+
+</script>
+
+
+
 
 <!--                                    <span> - DevTools</span><br>-->
 <!--                                    <span> - Test IT, TestRail, TestLink</span>-->

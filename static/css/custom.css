@@ -24,13 +24,19 @@
     }
 
     .modal_img {
-        width: 200px;
-        min-height: 100px;
-        float: left;
-        padding: 20px;
-        margin-right: 40px;
+        max-width: 200px;
+        float: right;
 
     }
+
+
+    .card-body {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+    }
+
 
     .container_skills {
       width: 100%;
