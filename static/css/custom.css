@@ -169,6 +169,24 @@
 
     }
 
+     .img_load {
+        width: 30px;
+        fill:#fff;
+     }
+
+
+
+
+
+    .a_load {
+      color:#ffffffc4
+
+    }
+
+     .a_load:hover {
+        background: #22232b;
+        color:#fff
+     }
 
 
      .resume{
