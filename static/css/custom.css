@@ -179,8 +179,9 @@
 
 
     .a_load {
-      color:#ffffffc4
-
+       color:#ffffffc4;
+       width: 100%;
+       text-align: left;
     }
 
      .a_load:hover {
