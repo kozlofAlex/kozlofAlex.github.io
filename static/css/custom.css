@@ -109,17 +109,11 @@
 
 
 
-    #experience a {
+    .experience a {
         color: #414a56;
     }
 
-    #experience a:hover {
-        color: #0d6efd;
-    }
 
-    #education a {
-        color: #414a56;
-    }
 
     #education a:hover {
         color: #0d6efd;
