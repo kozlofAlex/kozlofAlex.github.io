@@ -24,7 +24,7 @@
     }
 
     .modal_img {
-        max-width: 200px;
+        width: 200px;
         float: right;
 
     }
@@ -34,8 +34,15 @@
         margin-right: 20px;
     }
 
+    .test {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+
+    }
+
     .mod_icon {
-    display: flex;
+        display: flex;
     }
 
 
@@ -64,7 +71,7 @@
 
     .skill {
 
-        height:23px;
+        height:25px;
 
     }
 
@@ -100,13 +107,24 @@
         color: white;
      }
 
-    .subsection h5 a {
+
+
+    #experience a {
         color: #414a56;
     }
 
-    .exp_info a {
+    #experience a:hover {
+        color: #0d6efd;
+    }
+
+    #education a {
         color: #414a56;
     }
+
+    #education a:hover {
+        color: #0d6efd;
+    }
+
 
      .nav-link:hover {
         color: #ffc107c7
