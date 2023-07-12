@@ -29,6 +29,15 @@
 
     }
 
+    .modal_icon {
+        max-height:40px;
+        margin-right: 20px;
+    }
+
+    .mod_icon {
+    display: flex;
+    }
+
 
     .card-body {
         display: flex;
