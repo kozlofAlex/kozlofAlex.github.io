@@ -1,6 +1,10 @@
+
+
+
+
     body {
         background-color: #eceff1;
-        font-family: 'IBM Plex Sans',Arial,sans-serif;
+        font-family: 'IBM Plex Sans', Arial,sans-serif;
 
 
     }
@@ -25,8 +29,8 @@
     }
 
     .modal_img {
-        width: 200px;
-        float: right;
+            width: 200px;
+            float: right;
 
     }
 
@@ -63,6 +67,92 @@
     }
 
 
+    .fancybox-stage .fancybox-slide--html {
+        width  : 100%;
+        margin: 0;
+        padding: 0;
+
+}
+
+
+    .close-Modal {
+        position: fixed;
+        width: 52px;
+        top: 20px;
+        right: 30px;
+        z-index: 999;
+
+}
+
+
+
+    .closebt {
+        transition: all 0.2s;
+        cursor:pointer;
+}
+
+    .closebt:hover {
+        transform:rotate(90deg);
+}
+
+
+
+    .modal_card {
+        height: 100vh;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        margin: 0 auto;
+        background: #eff3f8;
+
+    }
+
+    .company {
+        text-align: center;
+        padding: 30px;
+        background: #2f4154;
+        color: #fff;
+        margin: 0;
+    }
+
+
+
+
+
+
+
+
+
+    .spec {
+    font-size: 3vw;
+
+    }
+
+    .header_name {
+        text-align: left;
+        font-weight: 700;
+        line-height: 1;
+        font-size: 3vw;
+     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     .manual_skills {width: 90%; background-color: #ffffffcc; height: 5px;}
     .automated_skills {width: 50%; background-color: #ffffffcc; height: 5px;}
@@ -77,17 +167,37 @@
     }
 
 
-    .modal-body {
-        font-size: smaller;
 
-    }
 
     .modal-body ul{
         list-style-type: none;
+
     }
 
+.modal_sections {
+    width:1000px;
+
+}
 
 
+.list6b {
+    padding:0;
+    list-style: none;
+}
+.list6b li{
+    padding:6px;
+}
+.list6b li:before {
+    padding-right:10px;
+    font-weight: bold;
+    color: #C0C0C0;
+    content: "\2714";
+    transition-duration: 0.5s;
+}
+.list6b li:hover:before {
+    color: #337AB7;
+    content: "\2714";
+}
 
 
     .git:hover {fill:#fff}
@@ -111,15 +221,40 @@
 
 
     .experience a {
-        color: #414a56;
+
     }
 
 
 
     #education a:hover {
-        color: #0d6efd;
+
     }
 
+    .company_name {
+        color:#22232b;
+        font-size: 1.1vw;
+    }
+
+    .company_spec {
+        font-size: 1vw;
+
+    }
+
+    .close {
+        position: relative;
+        width:100%;
+        text-align:center;
+        margin-top:40px;
+    }
+    .closebt {
+        transition: all 0.2s;
+        cursor:pointer;
+        filter: invert(0.4);
+    }
+    .closebt:hover {
+        transform:rotate(90deg);
+        filter: invert(1);
+    }
 
      .nav-link:hover {
         color: #ffc107c7
@@ -129,7 +264,7 @@
         padding: 0px;
         background: white;
         box-shadow: 12px -17px 76px 3px rgba(0, 0, 0, 0.2);
-        width: 70%;
+        width: 80%;
         min-width: 1020px;
         margin: 30px auto;
      }
@@ -235,6 +370,35 @@
         filter: invert(1);
     }
 
+    .content_mod {
+
+
+    }
+
+    .content_mod_section {
+        width:80%;
+        margin: 20px auto;
+
+    }
+
+    .fix-bg {
+        height: 520px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
+        margin: 20px 0;
+}
+
+
+@media (max-width: 767px) {
+    .fix-bg {
+        background-attachment: scroll;
+        height: 320px;
+    }
+}
+
+
 
 
     .cont {
@@ -291,12 +455,6 @@
 
      }
 
-     .header_name {
-        text-align: left;
-        font-weight: 700;
-        line-height: 1;
-        font-size: 3em;
-     }
 
     .header_profession {
         margin: 0 0 0.5em;
@@ -527,6 +685,33 @@
 
 
 
+
+
+
+
+.col2 a {
+
+    text-decoration:none;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    display:inline-block;
+}
+.col2 a:hover {
+
+    text-decoration:none;
+}
+.col2 a:after {
+    display: block;
+    content: "";
+    height: 1px;
+    width: 0%;
+    background-color: #3399FF;
+    transition: width 0.4s ease-in-out;
+}
+.col2 a:hover:after,
+.col2 a:focus:after {
+    width: 100%;
+}
 
 
 
