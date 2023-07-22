@@ -4,15 +4,10 @@
 /* #experience,#about_me,#education,#portfolio, #certificates {scroll-margin-top: 1.2rem;}*/
 
 :root {
-  --main-body-color: #eceff1;
-  --main-bg-color-1: #f2f2f2;
-  --main-bg-color-2: #414a56;
-  --main-color: #f2f2f2;
-  --main-font-size: 16px;
+  --main-header-bg: linear-gradient(to right, rgba(0,0,0,.6), rgba(0,0,0,.6)), url(/static/img/qa.svg) right no-repeat;
+  --main-bg-color: #f2f2f2;
+  --main-color: #000;
 }
-
-
-
 
 
 
@@ -23,30 +18,37 @@
     }
 
     .resume{
-        margin-top: 3em;
-        margin-bottom: 3em;
-        background: #fff;
-        padding: 0;
-        box-shadow: 12px -17px 76px 3px rgba(0, 0, 0, 0.2);
+        padding:0;
     }
+
+    .header {
+        background: var(--main-header-bg);
+        min-height:500px;
+        height: 100vh;
+        color: #fff;
+        display: flex;
+        align-items: center;
+     }
+
 
     .photo {
         padding: 0;
-
+        max-width: 400px;
     }
 
     .profile-photo {
-        width: 100%;
-        height: 100%;
+        width: 100px;
+        height: 100px;
         object-fit: cover;
         object-position: center;
+        border-radius: 50%;
     }
 
     .head {
         font-family: 'IBM Plex Sans', Arial,sans-serif;
         padding: 2em;
         display: flex;
-        justify-content: space-between;
+
     }
 
     .head_info {
@@ -54,15 +56,14 @@
     }
 
     .head_name {
-        text-align: left;
-        font-weight: 700;
-        line-height: 1;
-        font-size: 4em;
+        font-family: 'futura-pt',Arial,sans-serif;
+        font-weight: 600;
+        font-size: 60px;
      }
 
     .head_spec {
-        font-size: 3em;
-
+        font-weight: 600;
+        font-size: 60px;
     }
 
     .head_data ul {
@@ -78,16 +79,56 @@
         filter: grayscale(0);
     }
 
+    .card_course {
+        display: flex;
+
+    }
+
+    .course_img {
+        width:200px;
+
+
+    }
+
+    .course-data {
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     .info {
 
     }
+
+    .subsection {
+        padding-top: 105px;
+        padding-bottom: 90px;
+
+
+    }
+
+
+
+
 
     .stat {
         padding:0;
     }
 
     .bg {
-        background-color: var(--main-bg-color-2);
+        background-color: var(--main-bg-color);
         color: var(--main-color)
     }
 
@@ -124,7 +165,7 @@
     .contacts a {
         display: block;
         text-align: left;
-        color:var(--main-color)
+        color:#94959a;
         transition: all 0.2s ease 0s;
     }
 
@@ -193,25 +234,22 @@
     .api_skills {width: 60%; background-color: #ffffffcc; height: 5px;}
     .bd_skills {width: 100%; background-color: #ffffffcc; height: 5px;}
 
-
-
     .skills img,.skills svg  {
-        height: 25px;
-
-        fill: var(--main-color)
+        height:25px;
     }
 
     .upload {
-        display: flex;
-        justify-content: space-around;
+
     }
 
     .upload a {
-        color: var(--main-color);
+        width: 100%;
+        border: none;
+        background:#414a56;
     }
 
     .upload a:hover {
-           color: #fff;
+        background:#22232b;
     }
 
     .img_up {
@@ -252,19 +290,20 @@
         font-size: 1.6em;
         font-weight: 700;
         letter-spacing: .1em;
-            text-transform: uppercase;
+        text-transform: uppercase;
+        text-align: center;
+        padding-bottom: 2em;
     }
 
 
     .swiper {
 
-        height:100px;
+        height:50px;
     }
 
     .swiper img{
-        max-height: 100%;
-        width: 60%;
-        background-size: cover;
+
+        height: 50px;
     }
 
     .swiper img:hover{
@@ -275,14 +314,11 @@
     .swiper .swiper-slide {
         display: flex;
         align-items: center;
-        justify-content: center;
     }
 
     .slider {
-        width:100%;
-        padding: 10px;
-        background: var(--main-color);
-        border-radius: 20px;
+        width:100%
+
     }
 
     .proj {
@@ -296,204 +332,12 @@
         transition: .4s
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.accordion {
-  background: #f9f9f9;
-}
-.accordion-tabs {
-  display: none;
-}
-.accordion-tabs :focus {
-  outline: none;
-}
-.accordion-item {
-  border-bottom: 1px solid #eaeaea;
-}
-.accordion-item:last-child {
-  border: none;
-}
-.accordion-item__label {
-  margin: 0;
-  padding: 1.25rem;
-  cursor: pointer;
-  transition: padding 0.2s ease;
-  position: relative;
-}
-.accordion-item__label:after {
-  content: "";
-  height: 4px;
-  width: 4px;
-  position: absolute;
-  top: -4px;
-  right: 1.25rem;
-  bottom: 0;
-  margin: auto;
-  border: 3px solid transparent;
-  border-radius: 2px;
-  transform: rotate(45deg);
-  border-color: transparent #447fff #447fff transparent;
-  opacity: 1;
-  transition: opacity 0.1s ease;
-}
-.accordion-item__label:hover {
-  background: #d3e1ff;
-}
-.accordion-item__container {
-  padding: 0 1.25em;
-  height: 0;
-  overflow: hidden;
-  opacity: 0;
-  transition: padding 0.2s ease, opacity 0.5s 0.15s ease;
-}
-.accordion-active {
-  background: rgba(68, 127, 255, 0.1);
-}
-.accordion-active .accordion-item__label {
-  padding-bottom: 0;
-  cursor: inherit;
-}
-.accordion-active .accordion-item__label:hover {
-  background: none;
-}
-.accordion-active .accordion-item__label:after {
-  opacity: 0;
-}
-.accordion-active .accordion-item__container {
-  padding: 1.25em;
-  height: auto;
-  opacity: 1;
-}
-.accordion-active .accordion-item__container p:first-child, .accordion-active .accordion-item__container h1:first-child, .accordion-active .accordion-item__container h2:first-child, .accordion-active .accordion-item__container h3:first-child, .accordion-active .accordion-item__container h4:first-child, .accordion-active .accordion-item__container h5:first-child, .accordion-active .accordion-item__container h6:first-child {
-  margin-top: 0;
-}
-.accordion-active .accordion-item__container p:last-child, .accordion-active .accordion-item__container h1:last-child, .accordion-active .accordion-item__container h2:last-child, .accordion-active .accordion-item__container h3:last-child, .accordion-active .accordion-item__container h4:last-child, .accordion-active .accordion-item__container h5:last-child, .accordion-active .accordion-item__container h6:last-child {
-  margin-bottom: 0;
-}
-
-@media (min-width: 800px) {
-  .accordion-tabs {
-    display: flex;
-    background: rgba(68, 127, 255, 0.1);
-  }
-  .accordion-tabs .accordion-tab {
-    background: rgba(68, 127, 255, 0.1);
-    padding: 1rem 2rem;
-    font: inherit;
-    flex: 1;
-    border: none;
-    cursor: pointer;
-    transition: background 0.1s ease;
-  }
-  .accordion-tabs .accordion-tab:hover {
-    background: rgba(249, 249, 249, 0.01);
-  }
-  .accordion-tabs .accordion-tab:last-child {
-    border-right: 0;
-  }
-  .accordion-tabs .accordion-tab.accordion-active {
-    background: #f9f9f9;
-  }
-
-  .accordion-item {
-    padding: 2.4rem;
-    display: none;
-    border: none;
-    background: #f9f9f9;
-    min-height: 260px;
-  }
-  .accordion-item__label, .accordion-item__container {
-    padding: 0;
-    transition: inherit;
-  }
-  .accordion-item__label {
-    margin-bottom: 1.5rem;
-  }
-  .accordion-item.accordion-active {
-    display: block;
-  }
-  .accordion-item.accordion-active .accordion-item__container {
-    padding: 0;
-  }
-}
-
-
-.accordion {
-  box-shadow: 0 1em 2em -0.9em rgba(0, 0, 0, 0.7);
-  border-radius: 10px;
-  overflow: hidden;
-  width: 100%;
-
-}
-@media (min-width: 600px) {
-  .accordion {
-
-  }
-}
-.accordion + p {
-  color: rgba(255, 255, 255, 0.8);
-  font-weight: 300;
-  font-size: 0.9rem;
-  margin-top: 2rem;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     .cards:hover .proj {
         opacity:1;
     }
 
     .cards {
-        height: 14em;
+        height: 230px;
         perspective: 1500px;
 
     }
@@ -534,7 +378,7 @@
 
     .back {
         transform: rotateY(180deg);
-        background: var(--main-bg-color-1);
+        background-color: rgb(242, 242, 242);
 
     }
 
@@ -633,7 +477,7 @@
     }
 
     .modal_img {
-            width: 120px;
+            width: 150px;
             float: right;
 
 
@@ -1341,10 +1185,7 @@ color: #fff;
 
 
 
-     .header {
 
-
-     }
 
      .header_data {
         width: 100%;
@@ -1539,9 +1380,6 @@ color: #fff;
 
 
 
-.description {
-     line-height: 1.4;
-}
 
 
 
@@ -1550,24 +1388,8 @@ color: #fff;
 
 
 
-@media (max-width: 992px){
-.proj {
-    opacity: 1;
-      }
-.cards {
-    font-size: calc(12px + (14 - 14) * ( (100vw - 480px) / ( 1024 - 480) ));
- }
-}
 
 
-@media (max-width: 768px) {
-.head {
-    padding-bottom: 0;
-      }
-.swiper img{
-    width:40%;
-}
-    }
 
 
 

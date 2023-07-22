@@ -5,121 +5,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Портфолио</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="static/css/custom.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" rel="stylesheet" />
-    <link rel="icon" href="favicon.svg" type="image/svg+xml">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.11/jquery.lazy.min.js"></script>
 </head>
 
 <body>
-<div class="container">
-    <div class="resume">
-        <div class="header">
-            <div class="photo">
+<div class="container resume">
+    <div class="container-fluid">
+        <div class="header row bg">
+            <div class="photo col-md-4 col-lg-3">
                 <img class="profile-photo img-fluid" src="static/img/foto.png">
             </div>
-            <div class="head">
-                <div>
-                    <h3 class="header_name">Козлов Александр</h3>
-                    <h2>QA engineer</h2><br>
-                    <h4>Специализация:</h4>
-                    <ul class="list2a">
-                        <li>Мануальное тестирование</li>
-                        <li>API тестирование</li>
-                        <li>Автоматизированное тестирование</li>
-                    </ul>
+            <div class="head col-md-8 col-lg-9">
+                <div class="head_info">
+                    <h3 class="head_name">Козлов Александр</h3>
+                    <h2 class="head_spec">QA engineer</h2><br>
+                    <div class="head_data">
+                        <h4>Специализация:</h4>
+                        <ul>
+                            <li>Мануальное тестирование</li>
+                            <li>API тестирование</li>
+                            <li>Автоматизированное тестирование</li>
+                        </ul>
+                    </div>
                 </div>
-                <div>
-                <a href="https://kirov.hh.ru/resume/4571cb95ff0af2393b0039ed1f6d3768455430" target="_blank"><img class="img-fluid img_logo_hh" src="static/img/hh.svg" title="HeadHunter"></a>
-                <a href="https://career.habr.com/alex_kozlov91" target="_blank"><img class="img-fluid img_logo_habr" src="static/img/habr.png" title="Хабр карьера"></a>
+                <div class="head_soc_link">
+                    <a href="https://kirov.hh.ru/resume/4571cb95ff0af2393b0039ed1f6d3768455430" target="_blank">
+                        <img class="img-fluid img_logo_hh" src="static/img/hh.svg" title="HeadHunter">
+                    </a>
+                    <a href="https://career.habr.com/alex_kozlov91" target="_blank">
+                        <img class="img-fluid img_logo_habr" src="static/img/habr.png" title="Хабр карьера">
+                    </a>
                 </div>
             </div>
         </div>
 
-        <div class="info">
-            <div class="col1">
-                <div class="header_profiles">
-                    <div>
-                        <a class="profiles_item" href="https://github.com/kozlofAlex" target="_blank"><svg class="icon git"  role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
-                        <a class="profiles_item" href="mailto:kozlaleksan2013@gmail.com" target="_blank"><svg  class="icon gmail" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg></a>
-                        <a class="profiles_item" href="https://tlgg.ru/Alex_Kozlov_QA" target="_blank"><svg class="icon teleg" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg></a>
-                        <a class="profiles_item" href="https://vk.com/id122275910" target="_blank"><svg class="icon vk" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9.489.004.729-.003h3.564l.73.003.914.01.433.007.418.011.403.014.388.016.374.021.36.025.345.03.333.033c1.74.196 2.933.616 3.833 1.516.9.9 1.32 2.092 1.516 3.833l.034.333.029.346.025.36.02.373.025.588.012.41.013.644.009.915.004.98-.001 3.313-.003.73-.01.914-.007.433-.011.418-.014.403-.016.388-.021.374-.025.36-.03.345-.033.333c-.196 1.74-.616 2.933-1.516 3.833-.9.9-2.092 1.32-3.833 1.516l-.333.034-.346.029-.36.025-.373.02-.588.025-.41.012-.644.013-.915.009-.98.004-3.313-.001-.73-.003-.914-.01-.433-.007-.418-.011-.403-.014-.388-.016-.374-.021-.36-.025-.345-.03-.333-.033c-1.74-.196-2.933-.616-3.833-1.516-.9-.9-1.32-2.092-1.516-3.833l-.034-.333-.029-.346-.025-.36-.02-.373-.025-.588-.012-.41-.013-.644-.009-.915-.004-.98.001-3.313.003-.73.01-.914.007-.433.011-.418.014-.403.016-.388.021-.374.025-.36.03-.345.033-.333c.196-1.74.616-2.933 1.516-3.833.9-.9 2.092-1.32 3.833-1.516l.333-.034.346-.029.36-.025.373-.02.588-.025.41-.012.644-.013.915-.009ZM6.79 7.3H4.05c.13 6.24 3.25 9.99 8.72 9.99h.31v-3.57c2.01.2 3.53 1.67 4.14 3.57h2.84c-.78-2.84-2.83-4.41-4.11-5.01 1.28-.74 3.08-2.54 3.51-4.98h-2.58c-.56 1.98-2.22 3.78-3.8 3.95V7.3H10.5v6.92c-1.6-.4-3.62-2.34-3.71-6.92Z"/></svg></a>
-                        <a class="profiles_item" href="Skype:alex_kozlov1991?chat" target="_blank"><svg class="icon skype" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.069 18.874c-4.023 0-5.82-1.979-5.82-3.464 0-.765.561-1.296 1.333-1.296 1.723 0 1.273 2.477 4.487 2.477 1.641 0 2.55-.895 2.55-1.811 0-.551-.269-1.16-1.354-1.429l-3.576-.895c-2.88-.724-3.403-2.286-3.403-3.751 0-3.047 2.861-4.191 5.549-4.191 2.471 0 5.393 1.373 5.393 3.199 0 .784-.688 1.24-1.453 1.24-1.469 0-1.198-2.037-4.164-2.037-1.469 0-2.292.664-2.292 1.617s1.153 1.258 2.157 1.487l2.637.587c2.891.649 3.624 2.346 3.624 3.944 0 2.476-1.902 4.324-5.722 4.324m11.084-4.882l-.029.135-.044-.24c.015.045.044.074.059.12.12-.675.181-1.363.181-2.052 0-1.529-.301-3.012-.898-4.42-.569-1.348-1.395-2.562-2.427-3.596-1.049-1.033-2.247-1.856-3.595-2.426-1.318-.631-2.801-.93-4.328-.93-.72 0-1.444.07-2.143.204l.119.06-.239-.033.119-.025C8.91.274 7.829 0 6.731 0c-1.789 0-3.47.698-4.736 1.967C.729 3.235.032 4.923.032 6.716c0 1.143.292 2.265.844 3.258l.02-.124.041.239-.06-.115c-.114.645-.172 1.299-.172 1.955 0 1.53.3 3.017.884 4.416.568 1.362 1.378 2.576 2.427 3.609 1.034 1.05 2.247 1.857 3.595 2.442 1.394.6 2.877.898 4.404.898.659 0 1.334-.06 1.977-.179l-.119-.062.24.046-.135.03c1.002.569 2.126.871 3.294.871 1.783 0 3.459-.69 4.733-1.963 1.259-1.259 1.962-2.951 1.962-4.749 0-1.138-.299-2.262-.853-3.266"/></svg></a>
-                        <a class="profiles_item" href="https://wa.me/79229485589" target="_blank"><svg class="icon wa" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
-                    </div>
+        <div class="info row">
+            <div class="stat bg col-md-4 col-lg-3">
+
+                <div class="profiles">
+                        <a href="https://github.com/kozlofAlex" target="_blank"><svg class="icon git"  role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+                        <a href="mailto:kozlaleksan2013@gmail.com" target="_blank"><svg  class="icon gmail" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg></a>
+                        <a href="https://tlgg.ru/Alex_Kozlov_QA" target="_blank"><svg class="icon teleg" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg></a>
+                        <a href="https://vk.com/id122275910" target="_blank"><svg class="icon vk" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9.489.004.729-.003h3.564l.73.003.914.01.433.007.418.011.403.014.388.016.374.021.36.025.345.03.333.033c1.74.196 2.933.616 3.833 1.516.9.9 1.32 2.092 1.516 3.833l.034.333.029.346.025.36.02.373.025.588.012.41.013.644.009.915.004.98-.001 3.313-.003.73-.01.914-.007.433-.011.418-.014.403-.016.388-.021.374-.025.36-.03.345-.033.333c-.196 1.74-.616 2.933-1.516 3.833-.9.9-2.092 1.32-3.833 1.516l-.333.034-.346.029-.36.025-.373.02-.588.025-.41.012-.644.013-.915.009-.98.004-3.313-.001-.73-.003-.914-.01-.433-.007-.418-.011-.403-.014-.388-.016-.374-.021-.36-.025-.345-.03-.333-.033c-1.74-.196-2.933-.616-3.833-1.516-.9-.9-1.32-2.092-1.516-3.833l-.034-.333-.029-.346-.025-.36-.02-.373-.025-.588-.012-.41-.013-.644-.009-.915-.004-.98.001-3.313.003-.73.01-.914.007-.433.011-.418.014-.403.016-.388.021-.374.025-.36.03-.345.033-.333c.196-1.74.616-2.933 1.516-3.833.9-.9 2.092-1.32 3.833-1.516l.333-.034.346-.029.36-.025.373-.02.588-.025.41-.012.644-.013.915-.009ZM6.79 7.3H4.05c.13 6.24 3.25 9.99 8.72 9.99h.31v-3.57c2.01.2 3.53 1.67 4.14 3.57h2.84c-.78-2.84-2.83-4.41-4.11-5.01 1.28-.74 3.08-2.54 3.51-4.98h-2.58c-.56 1.98-2.22 3.78-3.8 3.95V7.3H10.5v6.92c-1.6-.4-3.62-2.34-3.71-6.92Z"/></svg></a>
+                        <a href="Skype:alex_kozlov1991?chat" target="_blank"><svg class="icon skype" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.069 18.874c-4.023 0-5.82-1.979-5.82-3.464 0-.765.561-1.296 1.333-1.296 1.723 0 1.273 2.477 4.487 2.477 1.641 0 2.55-.895 2.55-1.811 0-.551-.269-1.16-1.354-1.429l-3.576-.895c-2.88-.724-3.403-2.286-3.403-3.751 0-3.047 2.861-4.191 5.549-4.191 2.471 0 5.393 1.373 5.393 3.199 0 .784-.688 1.24-1.453 1.24-1.469 0-1.198-2.037-4.164-2.037-1.469 0-2.292.664-2.292 1.617s1.153 1.258 2.157 1.487l2.637.587c2.891.649 3.624 2.346 3.624 3.944 0 2.476-1.902 4.324-5.722 4.324m11.084-4.882l-.029.135-.044-.24c.015.045.044.074.059.12.12-.675.181-1.363.181-2.052 0-1.529-.301-3.012-.898-4.42-.569-1.348-1.395-2.562-2.427-3.596-1.049-1.033-2.247-1.856-3.595-2.426-1.318-.631-2.801-.93-4.328-.93-.72 0-1.444.07-2.143.204l.119.06-.239-.033.119-.025C8.91.274 7.829 0 6.731 0c-1.789 0-3.47.698-4.736 1.967C.729 3.235.032 4.923.032 6.716c0 1.143.292 2.265.844 3.258l.02-.124.041.239-.06-.115c-.114.645-.172 1.299-.172 1.955 0 1.53.3 3.017.884 4.416.568 1.362 1.378 2.576 2.427 3.609 1.034 1.05 2.247 1.857 3.595 2.442 1.394.6 2.877.898 4.404.898.659 0 1.334-.06 1.977-.179l-.119-.062.24.046-.135.03c1.002.569 2.126.871 3.294.871 1.783 0 3.459-.69 4.733-1.963 1.259-1.259 1.962-2.951 1.962-4.749 0-1.138-.299-2.262-.853-3.266"/></svg></a>
+                        <a href="https://wa.me/79229485589" target="_blank"><svg class="icon wa" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
                 </div>
-                <div class="col_info" >
-                    <div class="contacts">
-                        <p><i class="fa fa-address-card" aria-hidden="true"></i> Контакты</p>
-                        <a class="nav_cont text-truncate"  href="mailto:kozlaleksan2013@gmail.com" title="kozlaleksan2013@gmail.com"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i> kozlaleksan2013@gmail.com</a>
-                        <a class="nav_cont" href="tel:+79229485589" title="+79229485589"><i class="fa fa-phone fa-fw" aria-hidden="true"></i> +7 (922) 948-55-89</a>
-                        <a class="nav_cont" href="https://tlgg.ru/Alex_Kozlov_QA" ><i class="fa fa-telegram fa-fw" aria-hidden="true"></i> Alex_Kozlov_QA</a>
-                        <a data-fancybox class="nav_cont" target="_blank" href="http://maps.google.com/maps/@58.6054835,49.6750072,14.04z"><i class="fa fa-map-marker fa-fw" aria-hidden="true"></i> Киров, Россия</a>
+
+                <div class="info_data">
+                    <div class="contacts text-truncate mb-5">
+                        <h5 class="mb-3"><i class="fa fa-address-card" aria-hidden="true"></i> Контакты</h5><hr>
+                        <a href="mailto:kozlaleksan2013@gmail.com" title="kozlaleksan2013@gmail.com"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i> kozlaleksan2013@gmail.com</a>
+                        <a href="tel:+79229485589" title="+79229485589"><i class="fa fa-phone fa-fw" aria-hidden="true"></i> +7 (922) 948-55-89</a>
+                        <a href="https://tlgg.ru/Alex_Kozlov_QA" ><i class="fa fa-telegram fa-fw" aria-hidden="true"></i> Alex_Kozlov_QA</a>
+                        <a href="http://maps.google.com/maps/@58.6054835,49.6750072,14.04z" data-fancybox ><i class="fa fa-map-marker fa-fw" aria-hidden="true"></i> Киров, Россия</a>
                     </div>
-                    <hr>
-                    <p><i class="fa fa-graduation-cap" aria-hidden="true"></i> Образование: <b>Высшее</b></p>
-                    <a data-fancybox="gallery" href="static/img/Диплом.jpg"><img style="width:50px; margin-right:10px;" class="svg" src="static/img/diplom.svg" ></a>
-                    <a data-fancybox="gallery" href="static/img/QAP.jpg"><img style="width:50px; margin-right:10px;" class="svg" src="static/img/certificate2.svg" ></a>
-                    <a data-fancybox="gallery" href="static/img/shnat.png"><img style="width:50px;" class="svg" src="static/img/certificate2.svg" ></a>
-                    <hr>
-                    <p><i class="fa fa-archive" aria-hidden="true"></i> Примеры работ</p>
-                    <div >
-                        <a class="btn mb-2 a_load" role="button" data-fancybox data-src="#Modal_manual">
-                            <svg class="img_load" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Google Sheets</title><path d="M11.318 12.545H7.91v-1.909h3.41v1.91zM14.728 0v6h6l-6-6zm1.363 10.636h-3.41v1.91h3.41v-1.91zm0 3.273h-3.41v1.91h3.41v-1.91zM20.727 6.5v15.864c0 .904-.732 1.636-1.636 1.636H4.909a1.636 1.636 0 0 1-1.636-1.636V1.636C3.273.732 4.005 0 4.909 0h9.318v6.5h6.5zm-3.273 2.773H6.545v7.909h10.91v-7.91zm-6.136 4.636H7.91v1.91h3.41v-1.91z"/></svg> Документация
-                        </a>
-                        <a class="btn a_load" role="button" data-fancybox data-src="#Modal_auto">
-                            <svg class="img_load" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg> Автотесты
-                        </a>
+
+                    <div class="formation mb-5">
+                        <h5 class="mb-3"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Образование: <b>Высшее</b></h5><hr>
+                        <a data-fancybox="gallery" href="static/img/Диплом.jpg"><img src="static/img/diplom.svg"></a>
+                        <a data-fancybox="gallery" href="static/img/QAP.jpg"><img src="static/img/certificate2.svg"></a>
+                        <a data-fancybox="gallery" href="static/img/shnat.png"><img src="static/img/certificate2.svg"></a>
                     </div>
-                    <div class="modal-body" id="Modal_manual" style="display:none; max-width:800px;">
-                        <div>
-                            <a target="_blank" href="https://docs.google.com/spreadsheets/d/1ekOHxTi5NUkH3Rg-R19t9hW3ATgcYmeHM5o0SfKrP48/edit?usp=sharing">Портал ГИСОГД РФ</a><br>
-                            <a target="_blank" href="https://docs.google.com/spreadsheets/d/1XSLXysYEPzcn2ZQx7stjbxF3ymXPbQeKhEBTCcwr4BM/edit?usp=sharing">Форма вывода средств со счета</a><br>
-                            <a target="_blank" href="https://docs.google.com/spreadsheets/d/1U6TtNCJnedqrt-QXeTbqRx81yCYH32hw3vpDVt7_eIY/edit?usp=sharing">Тестовый стэнд сайта Monge</a><br>
-                            <a target="_blank" href="https://docs.google.com/spreadsheets/d/1duoCbv6G1kaRiQWd_4oMSMEwf3PxO2jHrazATA9jh2g/edit?usp=sharing">Интерфейс авторизации "Ростелеком ИТ"</a><br>
-                            <a target="_blank" href="https://docs.google.com/spreadsheets/d/1T-6xBT7Oj_HccjVjizTrZ9DVMdxQYFRwNbpI_iIiBX8/edit?usp=sharing">Тестовые артефакты сайта "Дом питомца"</a><br>
+
+                    <div class="examples mb-5">
+                        <h5 class="mb-3"><i class="fa fa-archive" aria-hidden="true"></i> Примеры работ</h5><hr>
+                        <div class="manual text-truncate mb-3">
+                            <a href="" data-fancybox data-src="#Modal_manual">
+                                <svg class="img_load" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Google Sheets</title><path d="M11.318 12.545H7.91v-1.909h3.41v1.91zM14.728 0v6h6l-6-6zm1.363 10.636h-3.41v1.91h3.41v-1.91zm0 3.273h-3.41v1.91h3.41v-1.91zM20.727 6.5v15.864c0 .904-.732 1.636-1.636 1.636H4.909a1.636 1.636 0 0 1-1.636-1.636V1.636C3.273.732 4.005 0 4.909 0h9.318v6.5h6.5zm-3.273 2.773H6.545v7.909h10.91v-7.91zm-6.136 4.636H7.91v1.91h3.41v-1.91z"/></svg>
+                                Документация
+                            </a>
+                            <div class="modal-body" id="Modal_manual" style="display:none;">
+                                <div>
+                                    <a target="_blank" href="https://docs.google.com/spreadsheets/d/1ekOHxTi5NUkH3Rg-R19t9hW3ATgcYmeHM5o0SfKrP48/edit?usp=sharing">Портал ГИСОГД РФ</a><br>
+                                    <a target="_blank" href="https://docs.google.com/spreadsheets/d/1XSLXysYEPzcn2ZQx7stjbxF3ymXPbQeKhEBTCcwr4BM/edit?usp=sharing">Форма вывода средств со счета</a><br>
+                                    <a target="_blank" href="https://docs.google.com/spreadsheets/d/1U6TtNCJnedqrt-QXeTbqRx81yCYH32hw3vpDVt7_eIY/edit?usp=sharing">Тестовый стэнд сайта Monge</a><br>
+                                    <a target="_blank" href="https://docs.google.com/spreadsheets/d/1duoCbv6G1kaRiQWd_4oMSMEwf3PxO2jHrazATA9jh2g/edit?usp=sharing">Интерфейс авторизации "Ростелеком ИТ"</a><br>
+                                    <a target="_blank" href="https://docs.google.com/spreadsheets/d/1T-6xBT7Oj_HccjVjizTrZ9DVMdxQYFRwNbpI_iIiBX8/edit?usp=sharing">Тестовые артефакты сайта "Дом питомца"</a><br>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="modal-body" id="Modal_auto" style="display:none; max-width:800px;">
-                        <div>
-                            <a target="_blank" href="https://github.com/kozlofAlex/Groall_form">Тестирование формы "Вывод средств со счета"</a><br>
-                            <a target="_blank" href="https://github.com/kozlofAlex/Rostelecom-tests">Тестирование интерфейса авторизации "Ростелеком ИТ"</a><br>
-                            <a target="_blank" href="https://github.com/kozlofAlex/PetFriens-Testing">Тестирование API сервиса PetFriens</a><br>
-                            <a target="_blank" href="https://github.com/kozlofAlex/Telegram-bot">Создание Telegram бота конвертации валют </a><br>
+                        <div class="auto">
+                            <a href="" data-fancybox data-src="#Modal_auto">
+                                <svg class="img_load" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                                Автотесты
+                            </a>
+                            <div class="modal-body" id="Modal_auto" style="display:none;">
+                                <div>
+                                    <a target="_blank" href="https://github.com/kozlofAlex/Groall_form">Тестирование формы "Вывод средств со счета"</a><br>
+                                    <a target="_blank" href="https://github.com/kozlofAlex/Rostelecom-tests">Тестирование интерфейса авторизации "Ростелеком ИТ"</a><br>
+                                    <a target="_blank" href="https://github.com/kozlofAlex/PetFriens-Testing">Тестирование API сервиса PetFriens</a><br>
+                                    <a target="_blank" href="https://github.com/kozlofAlex/Telegram-bot">Создание Telegram бота конвертации валют </a><br>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="skills">
-                        <hr>
-                        <p><i class="fa fa-bug" aria-hidden="true"></i> Виды тестирований</p>
-                        <div style="margin-bottom:10px;">
-                            <span>Ручное тестирование</span>
+                    <div class="skills mb-5">
+                        <h5 class="mb-3"><i class="fa fa-bug" aria-hidden="true"></i> Виды тестирований</h5><hr>
+                        <div class="mb-3">
+                            <span>Manual</span>
                             <div class="container_skills">
                                 <div class="manual_skills">
                                 </div>
                             </div>
                         </div>
-                        <div style="margin-bottom:10px;">
-                            <span>Автоматизированное тестирование</span>
+                        <div class="mb-3">
+                            <span>Automated</span>
                             <div class="container_skills">
                                 <div class="automated_skills">
                                 </div>
                             </div>
                         </div>
-                        <div style="margin-bottom:10px;">
-                            <span>API тестирование</span>
+                        <div class="mb-3">
+                            <span>API testing</span>
                             <div class="container_skills">
                                 <div class="api_skills">
                                 </div>
                             </div>
                         </div>
-                        <div style="margin-bottom:10px;">
-                            <span>Базы данных</span>
+                        <div class="mb-3">
+                            <span>Database</span>
                             <div class="container_skills">
                                 <div class="bd_skills">
                                 </div>
@@ -127,315 +141,552 @@
                         </div>
                     </div>
 
-                    <div class="skills">
-                        <hr>
-                        <p><i class="fa fa-wrench" aria-hidden="true"></i> Работа с инструментами</p>
-                        <img class="skill" src="https://img.shields.io/badge/Python-%23555555?style=flat-square&logo=python&logoColor=white">
-                        <img class="skill" src="https://img.shields.io/badge/Playwright-%23555555?style=flat-square&logo=playwright&logoColor=white">
-                        <img class="skill" src="https://img.shields.io/badge/Selenium-%23555555?style=flat-square&logo=Selenium&logoColor=white">
-                        <img class="skill" src="https://img.shields.io/badge/Pytest-%23555555?style=flat-square&logo=pytest&logoColor=white">
-                        <img class="skill" src="https://img.shields.io/badge/Git-%23555555?style=flat-square&logo=git&logoColor=white">
-                        <img class="skill" src="https://img.shields.io/badge/Postman-%23555555?style=flat-square&logo=Postman&logoColor=white">
-                        <img class="skill" src="https://img.shields.io/badge/Swagger-%23555555?style=flat-square&logo=Swagger&logoColor=white">
-                        <img class="skill" src="https://img.shields.io/badge/Test IT-%23555555?style=flat-square&logoColor=white">
-                        <img class="skill" src="https://img.shields.io/badge/Redmine-%23555555?style=flat-square&logo=Redmine&logoColor=white">
-                        <img class="skill" src="https://img.shields.io/badge/Trello-%23555555?style=flat-square&logo=Trello&logoColor=white">
-                        <img class="skill" src="https://img.shields.io/badge/Jira-%23555555?style=flat-square&logo=jira&logoColor=white">
-                        <img class="skill" src="https://img.shields.io/badge/Confluence-%23555555?style=flat-square&logo=confluence&logoColor=white">
-                        <img class="skill" src="https://img.shields.io/badge/Notion-%23555555?style=flat-square&logo=Notion&logoColor=white">
-                        <img class="skill" src="https://img.shields.io/badge/Android%20Studio-%23555555?style=flat-square&logo=android-studio&logoColor=white">
-                        <img class="skill" src="https://img.shields.io/badge/Figma-%23555555?style=flat-square&logo=Figma&logoColor=white">
-                        <img class="skill" src="https://img.shields.io/badge/DevTools-%23555555?style=flat-square&logoColor=white">
+                    <div class="skills mb-5">
+                        <h5 class="mb-3"><i class="fa fa-wrench" aria-hidden="true"></i> Работа с инструментами</h5>
+                        <img class="skill" src="https://img.shields.io/badge/Python-hsla(0%2C%200%25%2C%200%25%2C%200)?style=flat-square&logo=python&logoColor=white">
+                        <img class="skill" src="https://img.shields.io/badge/Playwright-hsla(0%2C%200%25%2C%200%25%2C%200)?style=flat-square&logo=playwright&logoColor=white">
+                        <img class="skill" src="https://img.shields.io/badge/Selenium-hsla(0%2C%200%25%2C%200%25%2C%200)?style=flat-square&logo=Selenium&logoColor=white">
+                        <img class="skill" src="https://img.shields.io/badge/Pytest-hsla(0%2C%200%25%2C%200%25%2C%200)?style=flat-square&logo=pytest&logoColor=white">
+                        <img class="skill" src="https://img.shields.io/badge/Git-hsla(0%2C%200%25%2C%200%25%2C%200)?style=flat-square&logo=git&logoColor=white">
+                        <img class="skill" src="https://img.shields.io/badge/Postman-hsla(0%2C%200%25%2C%200%25%2C%200)?style=flat-square&logo=Postman&logoColor=white">
+                        <img class="skill" src="https://img.shields.io/badge/Swagger-hsla(0%2C%200%25%2C%200%25%2C%200)?style=flat-square&logo=Swagger&logoColor=white">
+                        <img class="skill" src="https://img.shields.io/badge/Test IT-hsla(0%2C%200%25%2C%200%25%2C%200)?style=flat-square&logoColor=white">
+                        <img class="skill" src="https://img.shields.io/badge/Redmine-hsla(0%2C%200%25%2C%200%25%2C%200)?style=flat-square&logo=Redmine&logoColor=white">
+                        <img class="skill" src="https://img.shields.io/badge/Trello-hsla(0%2C%200%25%2C%200%25%2C%200)?style=flat-square&logo=Trello&logoColor=white">
+                        <img class="skill" src="https://img.shields.io/badge/Jira-hsla(0%2C%200%25%2C%200%25%2C%200)?style=flat-square&logo=jira&logoColor=white">
+                        <img class="skill" src="https://img.shields.io/badge/Confluence-hsla(0%2C%200%25%2C%200%25%2C%200)?style=flat-square&logo=confluence&logoColor=white">
+                        <img class="skill" src="https://img.shields.io/badge/Notion-hsla(0%2C%200%25%2C%200%25%2C%200)?style=flat-square&logo=Notion&logoColor=white">
+                        <img class="skill" src="https://img.shields.io/badge/Android%20Studio-hsla(0%2C%200%25%2C%200%25%2C%200)?style=flat-square&logo=android-studio&logoColor=white">
+                        <img class="skill" src="https://img.shields.io/badge/Figma-hsla(0%2C%200%25%2C%200%25%2C%200)?style=flat-square&logo=Figma&logoColor=white">
+                        <img class="skill" src="https://img.shields.io/badge/DevTools-hsla(0%2C%200%25%2C%200%25%2C%200)?style=flat-square&logoColor=white">
                     </div>
-                    <div class="skills">
-                        <hr>
-                        <p><i class="fa fa-database" aria-hidden="true"></i> Работа с базами данных</p>
-                        <img class="skill" src="https://img.shields.io/badge/Microsoft%20SQL%20Server-%23555555?style=flat-square&logo=microsoft%20sql%20server&logoColor=white">
-                        <img class="skill" src="https://img.shields.io/badge/PostgreSQL-%23555555?style=flat-square&logo=postgresql&logoColor=white">
-                        <img class="skill" src="https://img.shields.io/badge/MySQL-%23555555?style=flat-square&logo=mysql&logoColor=white">
-                        <img class="skill" src="https://img.shields.io/badge/MondoDB-%23555555?style=flat-square&logo=MondoDB&logoColor=white">
-                        <img class="skill" src="https://img.shields.io/badge/Redis-%23555555?style=flat-square&logo=Redis&logoColor=white">
+
+                    <div class="skills mb-5">
+                        <h5 class="mb-3"><i class="fa fa-database" aria-hidden="true"></i> Работа с базами данных</h5><hr>
+                        <img src="https://img.shields.io/badge/Microsoft%20SQL%20Server-hsla(0%2C%200%25%2C%200%25%2C%200)?style=flat-square&logo=microsoft%20sql%20server&logoColor=white">
+                        <img src="https://img.shields.io/badge/PostgreSQL-hsla(0%2C%200%25%2C%200%25%2C%200)?style=flat-square&logo=postgresql&logoColor=white">
+                        <img src="https://img.shields.io/badge/MySQL-hsla(0%2C%200%25%2C%200%25%2C%200)?style=flat-square&logo=mysql&logoColor=white">
+                        <img src="https://img.shields.io/badge/MondoDB-hsla(0%2C%200%25%2C%200%25%2C%200)?style=flat-square&logo=MondoDB&logoColor=white">
+                        <img src="https://img.shields.io/badge/Redis-hsla(0%2C%200%25%2C%200%25%2C%200)?style=flat-square&logo=Redis&logoColor=white">
                     </div>
-                    <div class="skills">
-                        <hr>
-                        <p><i class="fa fa-laptop" aria-hidden="true"></i> Сопровождение веб-сайтов</p>
-                        <img class="skill" src="https://img.shields.io/badge/HTML-%23555555?style=flat-square&logo=HTML5&logoColor=white">
-                        <img class="skill" src="https://img.shields.io/badge/CSS-%23555555?style=flat-square&logo=css3&logoColor=white">
-                        <img class="skill" src="https://img.shields.io/badge/Javascript%20-%23555555?style=flat-square&logo=javascript&logoColor=white">
+
+                    <div class="skills mb-5">
+                        <h5 class="mb-3"><i class="fa fa-laptop" aria-hidden="true"></i> Сопровождение веб-сайтов</h5><hr>
+                        <img src="https://img.shields.io/badge/HTML-hsla(0%2C%200%25%2C%200%25%2C%200)?style=flat-square&logo=HTML5&logoColor=white">
+                        <img src="https://img.shields.io/badge/CSS-hsla(0%2C%200%25%2C%200%25%2C%200)?style=flat-square&logo=css3&logoColor=white">
+                        <img src="https://img.shields.io/badge/Javascript%20-hsla(0%2C%200%25%2C%200%25%2C%200)?style=flat-square&logo=javascript&logoColor=white">
                     </div>
-                    <div class="skills">
-                        <hr>
-                        <p><i class="fa fa-terminal" aria-hidden="true"></i> IDE</p>
-                        <img class="skill" src="https://img.shields.io/badge/PyCharm-%23555555?style=flat-square&logo=pycharm&logoColor=white">
-                        <img class="skill" src="https://img.shields.io/badge/Visual Studio Code-%23555555?style=flat-square&logo=Visual Studio Code&logoColor=white">
-                        <img class="skill" src="https://img.shields.io/badge/IntelliJ_IDEA-%23555555?style=flat-square&logo=intellij-idea&logoColor=white">
-                        <img class="skill" src="https://img.shields.io/badge/DataGrip-%23555555?style=flat-square&logo=datagrip&logoColor=white">
+
+                    <div class="skills mb-5">
+                        <h5 class="mb-3"><i class="fa fa-terminal" aria-hidden="true"></i> IDE</h5><hr>
+                        <img src="https://img.shields.io/badge/PyCharm-hsla(0%2C%200%25%2C%200%25%2C%200)?style=flat-square&logo=pycharm&logoColor=white">
+                        <img src="https://img.shields.io/badge/Visual Studio Code-hsla(0%2C%200%25%2C%200%25%2C%200)?style=flat-square&logo=Visual Studio Code&logoColor=white">
+                        <img src="https://img.shields.io/badge/IntelliJ_IDEA-hsla(0%2C%200%25%2C%200%25%2C%200)?style=flat-square&logo=intellij-idea&logoColor=white">
+                        <img src="https://img.shields.io/badge/DataGrip-hsla(0%2C%200%25%2C%200%25%2C%200)?style=flat-square&logo=datagrip&logoColor=white">
                     </div>
-                    <hr>
-                    <div class="upload">
-                        <a class="btn btn-dark upload" data-fancybox data-src="static/img/kozlofalex.pdf" data-type="iframe"  ><img class="img-fluid img_up" src="static/img/upload.svg" > Скачать резюме</a>
+
+                    <div class="projects mb-5">
+                        <h5 class="mb-3"><i class="fa fa-university" aria-hidden="true"></i> Проекты</h5><hr>
+                        <div class="slider">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><img src="static/img/mfua.svg"></div>
+                                    <div class="swiper-slide"><img src="static/img/segezha.png"></div>
+                                    <div class="swiper-slide"><img src="static/img/brit.png"></div>
+                                    <div class="swiper-slide"><img src="static/img/bitrix.png"></div>
+                                    <div class="swiper-slide"><img src="static/img/hunt.svg"></div>
+                                    <div class="swiper-slide"><img src="static/img/Shopify.png"></div>
+                                    <div class="swiper-slide"><img src="static/img/Hoff.svg"></div>
+                                    <div class="swiper-slide"><img src="static/img/Yandex.svg"></div>
+                                </div>
+
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="upload mb-5">
+                        <a href="" data-fancybox data-src="static/img/kozlofalex.pdf" data-type="iframe">
+                            <img class="img-fluid img_up" src="static/img/upload.svg" > Скачать резюме
+                        </a>
                     </div>
                 </div>
             </div>
 
 
-            <div class="col2 mb-3">
-                <div id="about_me" class="section">
-                    <div class="section_subsections">
-                        <div class="subsection">
-                            <h3 class="section_title"><i class="fa fa-user-circle" aria-hidden="true"></i> Обо мне</h3>
-                            <hr>
-                            <p>Имею высшее образование в области Информационных технологий<br>
-                                Работаю IT-специалистом более 7 лет (последний год в должности <b>Manual QA</b>,
-                                ранее - специалистом по базам данных), имею хороший технический бэкграунд,
-                                знаю теорию тестирования и применяю её в работе, практикуюсь в автоматизации
-                            </p>
-                            <span> Законченные курсы:</span>
-                            <ul>
-                                <li>Тестировщик-автоматизатор на Python (<b>Skillfactory</b>)</li>
-                                <li>Тестировщик ПО (<b>ШНАТ</b>)</li>
-                            </ul>
-                        </div>
+            <div class="sections col-md-8 col-lg-9">
+                <div id="about_me" class="mb-5">
+                    <div class="subsection">
+                        <h3 class="section_title"><i class="fa fa-user-circle" aria-hidden="true"></i> Обо мне</h3>
+                        <hr>
+                        <p>Имею высшее образование в области Информационных технологий<br>
+                            Работаю IT-специалистом более 7 лет, последний год в должности <b>Manual QA</b><br>
+                            Ранее работал специалистом по базам данных, имею хороший технический бэкграунд<br>
+                            Знаю теорию тестирования и применяю её в работе, также практикуюсь в автоматизации
+                        </p>
+                        <span> Законченные курсы:</span>
+                        <ol>
+                            <li>Тестировщик-автоматизатор на Python (<b>Skillfactory</b>)</li>
+                            <li>Тестировщик ПО (<b>ШНАТ</b>)</li>
+                        </ol>
                     </div>
                 </div>
 
-                <div id="skills_test" class="section">
-                    <div class="section_subsections">
-                        <div class="subsection">
-                            <h3 class="section_title"><i class="fa fa-cogs" aria-hidden="true"></i> Навыки в тестировании</h3>
-                            <hr>
-                            <div class="test">
-                                <div class="manual" style="padding: 10px; flex-basis: 50%;">
-                                    <h2 class="header_profession text-uppercase">Ручное тестирование:</h2>
-                                    <ul>
-                                        <li>Ручное тестирования браузерных и мобильных приложений</li>
-                                        <li>Составление тестовой документации:<br><b>тест-кейсы, чек-листы, тест планы</b></li>
-                                        <li>Оформление баг-репортов и контроль исправления ошибок</li>
-                                        <li>Использование техник тест-дизайна в работе</li>
-                                        <li>Тестирование технической документации</li>
-                                        <li>Тестирование API с помощью Postman</li>
-                                        <li>Тестирование верстки с помощью Perfect Pixel</li>
-                                    </ul>
-                                </div>
-                                <div class="auto" style="padding: 10px; flex-basis: 50%;">
-                                    <h2 class="header_profession text-uppercase">Автоматизированное тестирование:</h2>
-                                    <ul>
-                                        <li>Автоматизация тестирования Web-приложений </li>
-                                        <li>Разработка автотестов с использованием паттерна PageObject </li>
-                                        <li>Основные технологии автоматизации: Selenium, Playwright, Requests</li>
-                                        <li>Стеки автоматизации тестирования Web приложений: </li>
-                                        <b>Python + Pytest + Selenium</b><br>
-                                        <b>Python + Pytest + Playwright</b><br>
-                                        <b>JS + Playwright</b>
-                                    </ul>
-                                </div>
+                <div id="skills_test" class="mb-5">
+                    <div class="subsection">
+                        <h3 class="section_title"><i class="fa fa-cogs" aria-hidden="true"></i> Навыки в тестировании</h3>
+                        <hr>
+                        <div class="row">
+                            <div class="col-lg">
+                                <h5 class="text-uppercase">Ручное тестирование:</h5>
+                                <ul style="line-height: 1.3;">
+                                    <li>Ручное тестирования браузерных и мобильных приложений</li>
+                                    <li>Составление тестовой документации:<br><b>тест-кейсы, чек-листы, тест планы</b></li>
+                                    <li>Оформление баг-репортов и контроль исправления ошибок</li>
+                                    <li>Использование техник тест-дизайна в работе</li>
+                                    <li>Тестирование технической документации</li>
+                                    <li>Тестирование API с помощью Postman</li>
+                                    <li>Тестирование верстки с помощью Perfect Pixel</li>
+                                </ul>
+                            </div>
+                            <div class="col-lg">
+                                <h5 class="text-uppercase">Автоматизированное тестирование:</h5>
+                                <ul style="line-height: 1.3;">
+                                    <li>Автоматизация тестирования Web-приложений </li>
+                                    <li>Разработка автотестов с использованием паттерна PageObject </li>
+                                    <li>Основные технологии автоматизации: Selenium, Playwright, Requests</li>
+                                    <li>Стеки автоматизации тестирования Web приложений: </li>
+                                    <b>Python + Pytest + Selenium</b><br>
+                                    <b>Python + Pytest + Playwright</b><br>
+                                    <b>JS + Playwright</b>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div id="experience" class="section">
+                <div id="experience" class="mb-5">
                     <h3 class="section_title"><i class="fa fa-briefcase" aria-hidden="true"></i> Опыт работы</h3>
                     <hr>
-                    <div class="experience">
-                        <div class="exp_data">
-                            <span>Сентябрь 2022 — <br>Март 2023</span>
+
+                    <div class="machaon row  mb-3">
+                            <div class="col-lg-3 mb-3">
+                                <span>Сентябрь 2022&nbsp;— Март&nbsp;2023</span>
+                            </div>
+                            <div class="col-lg-9">
+                                <div class="cards">
+                                <input type="checkbox" id="card1" class="more">
+                                    <div class="content">
+                                        <div class="front">
+                                            <div class="inner">
+                                                <div class="description">
+                                                    <label for="card1" class="proj" aria-hidden="true">
+                                                        <i class="fa fa-info-circle fa-lg" aria-hidden="true"></i>
+                                                    </label>
+
+                                                    <p><a href="https://machaon.ru/" class="company_link" target="_blank"><span class="company_name text-uppercase fw-bold">Machaon</span></a><br>
+                                                    <span class="company_spec"><b>Тестировщик ПО</b></span></p>
+                                                     <p>Тестирование b2b решений, интеграционных сервисов<br>
+                                                         Составление тестовой документации<br>
+                                                         Оформление дефектов в баг-трекинговой системе<br>
+                                                     </p>
+                                                    <a role="button" class="link" data-fancybox data-src="#dialog1" data-modal="true">Подробнее...</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="back" >
+                                            <label for="card1" class="proj" aria-hidden="true">
+                                                <i class="fa fa-arrow-circle-o-left fa-lg" aria-hidden="true"></i>
+                                            </label>
+                                            <div class="inner">
+                                                <div class="description">
+                                                    <p><b>MACHAON</b> - разрабатывает сложные проекты и системы для крупного бизнеса.</p>
+                                                    <p>Реализовали более 800 проектов для корпораций-лидеров различных отраслей экономики.</p>
+                                                    <p>Среди клиентов Группы: Лукойл, Samsung, Xerox, Британская высшая школа дизайна, Университет МФЮА и многие другие.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="modal-body " id="dialog1" style="display:none;width:100%; height:100vh;">
+                                    <div class="close">
+                                        <img class="closebt" data-fancybox-close src="static/img/close.svg">
+                                    </div>
+
+
+
+
+
+
+
+
+  <section class="accordion">
+    <section class="accordion-tabs">
+        <button class="accordion-tab accordion-active" data-actab-group="0" data-actab-id="0">
+            <img class="tab_img img-fluid" src="static/img/mfua.svg" alt="мфюа">
+        </button>
+        <button class="accordion-tab" data-actab-group="0" data-actab-id="1">
+            <img class="tab_img img-fluid" src="static/img/segezha.png" alt="Segezha">
+        </button>
+        <button class="accordion-tab" data-actab-group="0" data-actab-id="2">
+            <img class="tab_img img-fluid" src="static/img/brit.png" alt="Британская высшая школа дизайна">
+        </button>
+        <button class="accordion-tab" data-actab-group="0" data-actab-id="3">
+            <img class="tab_img img-fluid" src="static/img/bitrix.png" alt="bitrix">
+        </button>
+        <button class="accordion-tab" data-actab-group="0" data-actab-id="4">
+            <img class="tab_img img-fluid" src="static/img/hunt.svg" alt="ispring">
+        </button>
+        <button class="accordion-tab" data-actab-group="0" data-actab-id="5">
+            <img class="tab_img img-fluid" src="static/img/Shopify.png" alt="ispring">
+        </button>
+    </section>
+
+    <section class="accordion-content">
+      <article class="accordion-item accordion-active" data-actab-group="0" data-actab-id="0">
+        <h4 class="accordion-item__label">Московский финансово-юридический университет</h4>
+        <div class="accordion-item__container">
+        <div class="img-section">
+                                                    <img class="img lazy" src="" data-src="static/img/title/mfua_title.jpg" alt="" />
+                                                    <div class="img-data">
+                                                        <div>
+                                                            <p>Сайт: <a href="https://www.mfua.ru/">https://www.mfua.ru/</a></p>
+                                                             <ol>
+                                                                 <li>Обеспечение качества разработки новой версии сайта университета МФЮА</li>
+                                                                 <li>Портал реализован на 1С-Битрикс, для более глубокого тестирования была изучена система и получены
+                                                                     <span class="mytooltip tooltip-effect-1">
+                                                                         <span class="tooltip-item">сертификаты</span>
+                                                                         <span class="tooltip-content clearfix">
+                                                                             <a data-fancybox href="static/img/1c_adm_base.jpg"><img class="lazy" src="" data-src="static/img/1c_adm_base.jpg"></a>
+                                                                         </span>
+                                                                     </span>
+                                                                 </li>
+                                                                 <li>Проверка верстки (дизайн в Figma), функционала, поиск багов</li>
+                                                             </ol>
+                                                            <p>В ходе работы проводились следующие виды тестирований:</p>
+                                                            <div class="button_badge">
+                                                                <span>Функциональное тестирование</span>
+                                                                <span>UI тестирование</span>
+                                                                <span>Тестирование доступности</span>
+                                                                <span>Тестирование локализации</span>
+                                                                <span>Кроссбраузерное тестирование</span>
+                                                                <span>Исследовательское тестирование</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+        </div>
+      </article>
+      <article class="accordion-item" data-actab-group="0" data-actab-id="1">
+        <h4 class="accordion-item__label">Компания Segezha Group</h4>
+        <div class="accordion-item__container">
+        <div class="img-section">
+                                                    <img class="img lazy"  src="" data-src="static/img/title/segezha_title.jpg" alt="" />
+                                                    <div class="img-data">
+                                                        <div>
+                                                            <p>Сайт: <a href="https://segezha-group.com/">https://segezha-group.com/</a></p>
+                                                            <ol>
+                                                                <li>Проверка нового функционала сайта</li>
+                                                                <li>Проверка верстки (дизайн в Figma), поиск багов</li>
+                                                            </ol>
+                                                            <p>В ходе работы проводились следующие виды тестирований:</p>
+                                                            <div class="button_badge">
+                                                                <span>Функциональное тестирование</span>
+                                                                <span>UI тестирование</span>
+                                                                <span>Кроссбраузерное тестирование</span>
+                                                                <span>Исследовательское тестирование</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+        </div>
+      </article>
+      <article class="accordion-item" data-actab-group="0" data-actab-id="2">
+        <h4 class="accordion-item__label">Британская высшая школа дизайна</h4>
+        <div class="accordion-item__container">
+        <div class="img-section">
+                                                    <img class="img lazy" src="" data-src="static/img/title/brit_title.jpg" alt="" />
+                                                    <div class="img-data">
+                                                        <div>
+                                                            <p>Сайт: <a href="https://britishdesign.ru/">https://britishdesign.ru/</a></p>
+                                                            <ol>
+                                                                <li>Тестирование основных сайтов при обновлении платформы</li>
+                                                                <li>Проверка верстки на соответствие дизайну</li>
+                                                                <li>Еженедельное тестирование форм регистраций</li>
+                                                            </ol>
+                                                            <p>В ходе работы проводились следующие виды тестирований:</p>
+                                                            <div class="button_badge">
+                                                                <span>Функциональное тестирование</span>
+                                                                <span>UI тестирование</span>
+                                                                <span>Кроссбраузерное тестирование</span>
+                                                                <span>Исследовательское тестирование</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+        </div>
+      </article>
+      <article class="accordion-item" data-actab-group="0" data-actab-id="3">
+        <h4 class="accordion-item__label">1C-Битрикс</h4>
+        <div class="accordion-item__container">
+            <div class="img-section">
+                                                    <img class="img lazy" src="" data-src="static/img/title/bitrix_title.jpg" alt="" />
+                                                    <div class="img-data">
+                                                        <div>
+                                                        <p>Сайт: <a href="https://www.1c-bitrix.ru/">https://www.1c-bitrix.ru/</a></p>
+                                                            <ol>
+                                                                <li>Тестирование решений на платформе 1С-Битрикс</li>
+                                                                <li>Проверка интеграции модулей на различных решениях</li>
+                                                            </ol>
+                                                            <p>В ходе работы проводились следующие виды тестирований:</p>
+                                                            <div class="button_badge">
+                                                                <span>Функциональное тестирование</span>
+                                                                <span>UI тестирование</span>
+                                                                <span>Кроссбраузерное тестирование</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+        </div>
+      </article>
+      <article class="accordion-item" data-actab-group="0" data-actab-id="4">
+        <h4 class="accordion-item__label">Хантфлоу</h4>
+        <div class="accordion-item__container">
+        <div class="img-section">
+                                                    <img class="img lazy" src="" data-src="static/img/title/hunt_title.jpg" alt="" />
+                                                    <div class="img-data">
+                                                        <div>
+                                                            <p>Сайт iSpring: <a href="https://www.ispring.ru/">https://www.ispring.ru/</a></p>
+                                                            <p>Сайт Huntflow: <a href="https://huntflow.ru/">https://huntflow.ru/</a></p>
+                                                            <ol>
+                                                                <li>Тестирование интеграции сервисов: <b>iSpring</b> (дистанционное обучение и конструктор курсов) + <b>Хантфлоу</b> (CRM для автоматизации рекрутмента и ведения базы кандидатов)</li>
+                                                                <li>Проведение API тестирования (Swagger/Postman)</li>
+                                                                <li>Создание тестовой документации в системе Test IT</li>
+                                                            </ol>
+                                                            <p>В ходе работы проводились следующие виды тестирований:</p>
+                                                            <div class="button_badge">
+                                                                <span>Функциональное тестирование</span>
+                                                                <span>UI тестирование</span>
+                                                                <span>API тестирование</span>
+                                                                <span>Кроссбраузерное тестирование</span>
+                                                                <span>Тестирование документации</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+        </div>
+      </article>
+        <article class="accordion-item" data-actab-group="0" data-actab-id="5">
+        <h4 class="accordion-item__label">Shopify</h4>
+        <div class="accordion-item__container">
+        <div class="img-section">
+                                                    <img class="img lazy" src="" data-src="static/img/title/shopify_title.jpg" alt="" />
+                                                    <div class="img-data">
+                                                        <div>
+                                                            <p>Сайт iSpring: <a href="https://www.ispring.ru/">https://www.ispring.ru/</a></p>
+                                                            <p>Сайт Shopify: <a href="https://www.shopify.com/">https://www.shopify.com/</a></p>
+                                                            <ol>
+                                                                <li>Тестирование интеграции сервисов: <b>iSpring</b> (дистанционное обучение и конструктор курсов) + <b>Хантфлоу</b> (CRM для автоматизации рекрутмента и ведения базы кандидатов)</li>
+                                                                <li>Проведение API тестирования (Swagger/Postman)</li>
+                                                                <li>Создание тестовой документации в системе Test IT</li>
+                                                            </ol>
+                                                            <p>В ходе работы проводились следующие виды тестирований:</p>
+                                                            <div class="button_badge">
+                                                                <span>Функциональное тестирование</span>
+                                                                <span>UI тестирование</span>
+                                                                <span>API тестирование</span>
+                                                                <span>Кроссбраузерное тестирование</span>
+                                                                <span>Тестирование документации</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+        </div>
+      </article>
+    </section>
+  </section>
+
+
+
+
+                                </div>
+                            </div>
+                                    </div>
+
+
+
+
+                    <div class="QA row  mb-3">
+                        <div class="col-lg-3 mb-3">
+                            <span>Август 2022&nbsp;— Сентябрь&nbsp;2022</span>
                         </div>
-                        <div class="exp_info">
-                            <a role="button" style="float: right;" class="btn btn-link" data-fancybox data-src="#dialog1" data-modal="true">Подробнее</a>
-                            <div class="modal-body " id="dialog1" style="display:none;width:100%">
+                        <div class="col-lg-9">
+                            <div class="cards">
+                                <input type="checkbox" id="card2" class="more">
+                                <div class="content">
+                                    <div class="front">
+                                        <div class="inner">
+                                            <div class="description">
+                                                <label for="card2" class="proj" aria-hidden="true">
+                                                    <i class="fa fa-info-circle fa-lg" aria-hidden="true"></i>
+                                                </label>
+
+                                                <p><a href="https://www.itqc.ru/" class="company_link" target="_blank"><span class="company_name text-uppercase fw-bold">Организация качества</span></a><br>
+                                                    <span class="company_spec"><b>Младший специалист по тестированию</b></span></p>
+                                                <p>Тестирование мобильных приложений<br>
+                                                    API тестирование (Postman)<br>
+                                                    Работа со сниффермом траффика (Fiddler)<br>
+                                                </p>
+                                                <a role="button" class="link" data-fancybox data-src="#dialog2" data-modal="true">Подробнее...</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <label for="card2" class="proj" aria-hidden="true">
+                                            <i class="fa fa-arrow-circle-o-left fa-lg" aria-hidden="true"></i>
+                                        </label>
+                                        <div class="inner">
+                                            <div class="description">
+                                                <p><b>ITQC</b> - компания специалистов по обеспечению качества в цифровых технологиях.</p>
+                                                <p>Компания предоставляет полный спектр услуг в области обеспечения качества программного обеспечения,
+                                                    начиная с классического ручного тестирования, его автоматизации, нагрузочного тестирования и заканчивая тестированием IoT, крауд и мобильным тестированием.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal-body " id="dialog2" style="display:none;width:100%; height:100vh;">
                                 <div class="close">
                                     <img class="closebt" data-fancybox-close src="static/img/close.svg">
                                 </div>
-                                <h1 class="modal_title">MACHAON</h1>
 
-                                <div class="container-fluid">
-                                    <div class="row justify-content-center">
-                                        <div class="icon-tab col-xs-12 col-sm-2 col-sm-offset-3 active">
-                                            <img class="modal_img img-fluid" src="static/img/mfua.svg" alt="мфюа">
-                                        </div>
-                                        <div class="icon-tab col-xs-12 col-sm-2 ">
-                                            <img class="modal_img img-fluid" src="static/img/segezha.png" alt="Segezha">
-                                        </div>
-                                        <div class="icon-tab col-xs-12 col-sm-2">
-                                            <img class="modal_img img-fluid" src="static/img/brit.png" alt="Британская высшая школа дизайна">
-                                        </div>
-                                        <div class="icon-tab col-xs-12 col-sm-2">
-                                            <img class="modal_img img-fluid" src="static/img/hunt.svg" alt="ispring">
-                                        </div>
-                                        <div class="icon-tab col-xs-12 col-sm-2">
-                                            <img class="modal_img img-fluid" src="static/img/Shopify.png" alt="ispring">
-                                        </div>
-                                      </div>
-                                </div>
-
-
-                                <div class="item col">
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading position-relative"><h2>Московский финансово-юридический университет
-                                        <span class="position-absolute top-0 end-0 badge text-bg-danger">UI</span></h2>
-                                        </div>
-                                        <div class="img-section">
-                                            <img class="img" src="static/img/mfua.jpg" alt="" />
-                                            <div class="img-data">
-                                                <div>
-                                                <ul class="list6b">
-                                                    <li>Обеспечение качества разработки новой версии сайта университета МФЮА</li>
-                                                    <li>Портал реализован на 1С-Битрикс, для более глубокого тестирования была изучена система и получены
-                                                    <span class="mytooltip tooltip-effect-1">
-                                                        <a data-fancybox href="static/img/1c_adm_base.jpg">
-                                                            <span class="tooltip-item">сертификаты</span>
-                                                                <span class="tooltip-content clearfix">
-                                                            <img src="static/img/1c_adm_base.jpg">
-                                                        </span></a>
-                                                    </span></li>
-                                                    <li>Проверка верстки (дизайн в Figma), функционала, поиск багов</li>
-                                                </ul>
-                                                </div>
-                                            </div>
+                                <div class="row">
+                                    <div class="tabs col-2">
+                                        <div class="icon-tab mobile active position-relative">
+                                            <img class="modal_img lazy" src="" data-src="static/img/hoff.svg" alt="Hoff">
+                                            <span class="position-absolute top-0 end-0 badge text-bg-warning">Mobile</span>
                                         </div>
                                     </div>
-                                </div>
 
-                                <div class="item col">
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading position-relative"><h2>Компания Segezha Group
-                                        <span class="position-absolute top-0 end-0 badge text-bg-danger">UI</span></h2></div>
-                                        <div class="img-section">
-                                            <img class="img" src="static/img/segezha.jpg" alt="" />
-                                            <div class="img-data">
-                                                <div>
-                                                <ul class="list6b">
-                                                    <li>Проверка нового функционала сайта</li>
-                                                    <li>Проверка верстки (дизайн в Figma), поиск багов</li>
-                                                </ul>
-                                                </div>
+                                    <div class="item">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading position-relative">
+                                                <h2 class="position-relative">Hoff</h2>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
 
-                                <div class="item col">
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading position-relative"><h2>Британская высшая школа дизайна
-                                        <span class="position-absolute top-0 end-0 badge text-bg-danger">UI</span></h2></div>
-                                        <div class="img-section">
-                                            <img class="img" src="static/img/brit.jpg" alt="" />
-                                            <div class="img-data">
-                                                <div>
-                                                <ul class="list6b">
-                                                    <li>Тестирование основных сайтов при обновлении платформы</li>
-                                                    <li>Проверка верстки на соответствие дизайну</li>
-                                                    <li>Еженедельное тестирование форм регистраций</li>
-                                                </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="item col">
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading position-relative"><h2>Хантфлоу
-                                        <span class="position-absolute top-0 end-0 badge text-bg-success">UI+API</span></h2></div>
-                                        <div class="img-section">
-                                            <img class="img" src="static/img/hunt.jpg" alt="" />
-                                            <div class="img-data">
-                                                <div>
-                                                <ul class="list6b">
-                                                    <li>Тестирование интеграции сервисов: <b>iSpring</b> (дистанционное обучение и конструктор курсов) + <b>Хантфлоу</b> (CRM для автоматизации рекрутмента и ведения базы кандидатов)</li>
-                                                    <li>Проведение API тестирования (Swagger/Postman)</li>
-                                                    <li>Создание тестовой документации в системе Test IT</li>
-                                                </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="item col">
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading position-relative"><h2>Shopify
-                                        <span class="position-absolute top-0 end-0 badge text-bg-success">UI+API</span></h2></div>
-                                        <div class="img-section">
-                                            <img class="img" src="static/img/shopify.jpg" alt="" />
-                                            <div class="img-data">
-                                                <div>
-                                                <ul class="list6b">
-                                                    <li>Тестирование интеграции сервисов: <b>iSpring</b> (дистанционное обучение и конструктор курсов) + <b>Shopify</b> (платформа для создания и ведения онлайн-бизнеса)</li>
-                                                    <li>Проведение API тестирования (Swagger/Postman)</li>
-                                                    <li>Создание тестовой документации в системе Test IT</li>
-                                                </ul>
+                                            <div class="img-section">
+                                                <img class="img lazy" src="" data-src="static/img/title/hoff_title.jpg" alt="" />
+                                                <div class="img-data">
+                                                    <div>
+                                                        <p>Сайт: <a href="https://hoff.ru/">https://hoff.ru/</a></p>
+                                                        <p>Приложение: <a href="https://play.google.com/store/apps/details?id=ru.hoff.app">hoff.app</a></p>
+                                                        <ol>
+                                                            <li>Тестирование мобильного приложения Hoff (гипермаркет мебели и товаров для дома) на мобильном устройстве</li>
+                                                            <li>Работа со сниффермом траффика (Fiddler)</li>
+                                                            <li>API тестирование с помощью Postman </li>
+                                                        </ol>
+                                                        <p>В ходе работы проводились следующие виды тестирований:</p>
+                                                        <div class="button_badge">
+                                                            <span>Мобильное тестирование</span>
+                                                            <span>Функциональное тестирование</span>
+                                                            <span>UI тестирование</span>
+                                                            <span>API тестирование</span>
+                                                            <span>Кроссплатформенное тестирование</span>
+                                                            <span>Тестирование документации</span>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
-                            <p><a href="https://machaon.ru/" class="company_link" target="_blank"><span class="company_name text-uppercase fw-bold">Machaon</span></a><br>
-                            <span class="company_spec"><b>Тестировщик ПО</b></span></p>
-                            <p>Тестирование b2b решений, интеграционных сервисов<br>
-                                Составление тестовой документации<br>
-                                Оформление дефектов в баг-трекинговой системе<br>
-                            </p>
                         </div>
+                    </div>
 
-                        <div class="exp_data">
-                            <span>Август 2022 — <br>Сентябрь 2022</span>
+                    <div class="yandex row  mb-3">
+                        <div class="col-lg-3 mb-3">
+                            <span>Июль 2022&nbsp;— Август&nbsp;2022</span>
                         </div>
-                        <div class="exp_info">
-                            <a role="button" style="float: right;" class="btn btn-link" data-fancybox data-src="#dialog2">Подробнее</a>
-                             <div class="modal-body" id="dialog2" style="display:none;max-width:900px;">
-                                 <h3>Организация качества</h3>
-                                 <div class="card mb-3">
-                                     <div class="card-body" >
-                                         <img class="modal_img img-fluid" src="static/img/Hoff.svg" alt="Hoff">
-                                         <ul>
-                                             <li>Тестирование мобильного приложения <b>Hoff</b> (гипермаркет мебели и товаров для дома) на мобильном устройстве</li>
-                                             <li>Работа со сниффермом траффика (Fiddler)</li>
-                                             <li>API тестирование с помощью Postman </li>
-                                         </ul>
-                                     </div>
-                                 </div>
-                             </div>
-
-                            <p><a href="https://www.itqc.ru/" class="company_link" target="_blank"><span class="company_name text-uppercase fw-bold">Организация качества</span></a><br>
-                            <span class="company_spec"><b>Младший специалист по тестированию</b></span></p>
-                            <p>Тестирование мобильных приложений<br>
-                                API тестирование (Postman, Fiddler)<br>
-                            </p>
-                        </div>
-
-                        <div class="exp_data">
-                            <span>Июль 2022 — <br>Август 2022</span>
-                        </div>
-                        <div class="exp_info">
-                            <a role="button" style="float: right;" class="btn btn-link" data-fancybox data-src="#dialog3">Подробнее</a>
-                            <div class="modal-body" id="dialog3" style="display:none; max-width:900px;">
-                                <h3>Яндекс</h3>
-                                <div class="card mb-3">
-                                    <div class="card-body" >
-                                        <img class="modal_img img-fluid" src="static/img/Yandex.svg" alt="Яндекс">
-                                        <ul>
-                                            <li>Тестирование приложений и сайтов экосистемы Яндекс, в том числе с помощью фермы устройств</li>
-                                            <li>Оформление баг-репортов</li>
-                                        </ul>
+                        <div class="col-lg-9">
+                            <div class="cards">
+                                <input type="checkbox" id="card3" class="more">
+                                <div class="content">
+                                    <div class="front">
+                                        <div class="inner">
+                                            <div class="description">
+                                                <label for="card3" class="proj" aria-hidden="true">
+                                                    <i class="fa fa-info-circle fa-lg" aria-hidden="true"></i>
+                                                </label>
+                                                <p><a href="http://www.yandex.ru" class="company_link" target="_blank"><span class="company_name text-uppercase fw-bold">Яндекс</span></a><br>
+                                                <span class="company_spec"><b>Младший специалист ручного тестирования</b></span></p>
+                                                <p>Тестирование сервисов Яндекса<br>
+                                                    Заведение баг-репортов в трекере<br>
+                                                    Создание тестовых сценариев, чек-листов, инструкций<br>
+                                                </p>
+                                                <a role="button" class="link" data-fancybox data-src="#dialog3" data-modal="true">Подробнее...</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <label for="card3" class="proj" aria-hidden="true">
+                                                    <i class="fa fa-arrow-circle-o-left fa-lg" aria-hidden="true"></i>
+                                                </label>
+                                        <div class="inner">
+                                            <div class="description">
+                                                <p><b>Яндекс</b> - российская транснациональная компания в отрасли информационных технологий,
+                                                    владеющая одноимённой системой поиска в интернете, интернет-порталом и веб-службами в нескольких странах
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <p><a href="http://www.yandex.ru" class="company_link" target="_blank"><span class="company_name text-uppercase fw-bold">Яндекс</span></a><br>
-                            <span class="company_spec"><b>Младший специалист ручного тестирования</b></span></p>
-                            <p>Тестирование сервисов Яндекса<br>
-                                Заведение баг-репортов в трекере<br>
-                                Создание тестовых сценариев, чек-листов, инструкций<br>
-                            </p>
+                            <div class="modal-body " id="dialog3" style="display:none;width:100%; height:100vh;">
+                                <div class="close">
+                                    <img class="closebt" data-fancybox-close src="static/img/close.svg">
+                                </div>
+
+                                <div class="row">
+                                    <div class="tabs col-2">
+                                        <div class="icon-tab mobile active position-relative">
+                                            <img class="modal_img lazy" src="" data-src="static/img/hoff.svg" alt="Hoff">
+                                            <span class="position-absolute top-0 end-0 badge text-bg-warning">Mobile</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="item">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading position-relative">
+                                                <h2 class="position-relative">Hoff</h2>
+                                            </div>
+
+                                            <div class="img-section">
+                                                <img class="img lazy" src="" data-src="static/img/title/mfua_title.jpg" alt="" />
+                                                <div class="img-data">
+                                                    <div>
+                                                        <p>Сайт: <a href="https://hoff.ru/">https://hoff.ru/</a></p>
+                                                         <ol>
+                                                             <li>Тестирование мобильного приложения Hoff (гипермаркет мебели и товаров для дома) на мобильном устройстве</li>
+                                                             <li>Работа со сниффермом траффика (Fiddler)</li>
+                                                             <li>API тестирование с помощью Postman </li>
+                                                         </ol>
+                                                        <p>В ходе работы проводились следующие виды тестирований:</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
 
-                    <h5><a role="button" class="btn btn-link" style="padding: 0;" data-fancybox data-src="#dialog4">Предыдущие места работы</a></h5>
+                    <h5><a role="button" class="btn btn-link link" style="padding: 0;" data-fancybox data-src="#dialog4">Предыдущие места работы</a></h5>
                     <div class="modal-body" id="dialog4" style="display:none; max-width:800px;">
                         <div class="card mb-3">
                             <div class="card-header">
@@ -482,45 +733,39 @@
                     </div>
                 </div>
 
-
-
-                <div id="education" class="section">
+                <div id="education" class="mb-5">
                     <h3 class="section_title"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Образование</h3>
                     <hr>
-                     <h5>Высшее образование</h5>
-                    <div class="education">
-                        <div class="exp_data">
-                            <span>Сентябрь 2009 — <br>Сентябрь 2014</span><br>
+                    <h5 class="mb-5">Высшее образование</h5>
+                    <div class="row  mb-5">
+                        <div class="col-lg-3 mb-3">
+                            <span>Сентябрь 2009&nbsp;— Сентябрь&nbsp;2014</span><br>
                         </div>
-                        <div class="exp_info">
-                            <div class="mb-3">
-                                <div class="education_info">
-                                    <table cellspacing="5" >
-                                        <tr>
-                                            <td valign="top"><b>Университет:</b> </td>
-                                            <td valign="top" style="padding-left: 20px;">Вятский государственный гуманитарный университет</td>
-                                        </tr>
-                                        <tr>
-                                            <td valign="top"><b>Факультет:</b> </td>
-                                            <td valign="top" style="padding-left: 20px;">Информатики, математики и физики</td>
-                                        </tr>
-                                        <tr>
-                                            <td valign="top"><b>Специальность:</b> </td>
-                                            <td valign="top" style="padding-left: 20px;">Математик, системный программист</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </div>
+                        <div class="col-lg-9">
+                            <table cellspacing="5" >
+                                <tr>
+                                    <td valign="top"><b>Университет:</b> </td>
+                                    <td valign="top" style="padding-left: 20px;">Вятский государственный гуманитарный университет</td>
+                                </tr>
+                                <tr>
+                                    <td valign="top"><b>Факультет:</b> </td>
+                                    <td valign="top" style="padding-left: 20px;">Информатики, математики и физики</td>
+                                </tr>
+                                <tr>
+                                    <td valign="top"><b>Специальность:</b> </td>
+                                    <td valign="top" style="padding-left: 20px;">Математик, системный программист</td>
+                                </tr>
+                            </table>
                         </div>
                     </div>
 
-                    <h5>Дополнительное образование</h5>
-                    <div class="education">
-                        <div class="exp_data">
-                            <span>Декабрь 2022 — <br>Май 2023</span><br>
-                        </div>
-                        <div class="exp_info">
-                            <div class="mb-3">
+
+                    <h5 class="mb-5">Дополнительное образование</h5>
+                    <div class="row mb-3">
+                        <div class="col-lg-3 mb-3">
+                                <span>Декабрь 2022&nbsp;— Май&nbsp;2023</span><br>
+                            </div>
+                            <div class="col-lg-9">
                                 <div class="education_info">
                                     <table cellspacing="5" >
                                         <tr>
@@ -535,12 +780,11 @@
                                 </div>
                             </div>
                         </div>
-
-                        <div class="exp_data">
-                            <span>Июнь 2022 — <br>Август 2022</span><br>
-                        </div>
-                        <div class="exp_info">
-                            <div class="mb-3">
+                        <div class="row ">
+                            <div class="col-lg-3 mb-3">
+                                <span>Июнь 2022&nbsp;— Август&nbsp;2022</span><br>
+                            </div>
+                            <div class="col-lg-9">
                                 <div class="education_info">
                                     <table cellspacing="5" >
                                         <tr>
@@ -557,15 +801,12 @@
                         </div>
                     </div>
 
-
-                    <h5><a role="button" class="btn btn-link" style="padding: 0;" data-fancybox data-src="#dialog5" >Другие курсы</a>
-                    </h5>
-                    <hr>
+                    <h5><a role="button" class="btn btn-link link" style="padding: 0;" data-fancybox data-src="#dialog5" >Другие курсы</a></h5>
                     <div class="modal-body" id="dialog5" style="display:none; max-width:900px;">
                         <h3>Другие курсы</h3>
                         <div class="education">
                             <div class="exp_data">
-                                <span>Декабрь 2022 — <br>Февраль 2023</span><br>
+                                <span>Декабрь 2022&nbsp;— Февраль&nbsp;2023</span><br>
                             </div>
                             <div class="exp_info">
                                 <div class="mb-3">
@@ -594,14 +835,16 @@
         </div>
     </div>
 </div>
+</div>
 
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-
 <script>
     $(function() {
         $('div.icon-tab').click(function() {
             $(this).addClass('active').siblings().removeClass('active');
-            setDisplay(400);
+            setDisplay(300);
         });
 
         function setDisplay(time) {
@@ -617,6 +860,110 @@
         //Disable the animation on page load
         setDisplay(0);
     });
+
+
+$(function() {
+    $("img.lazy").Lazy();
+});
+
+
+    var swiper = new Swiper(".swiper", {
+      spaceBetween: 50,
+      centeredSlides: true,
+<!--      direction: 'vertical',-->
+      mousewheel: true,
+      slidesPerView: 1,
+      loop: true,
+      speed: 1000,
+<!--      pagination: {-->
+<!--        el: ".swiper-pagination",-->
+<!--        clickable: true,-->
+<!--      },-->
+<!--      autoplay: {-->
+<!--        delay: 7000,-->
+<!--        disableOnInteraction: false,-->
+<!--      },-->
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+        var swiper = new Swiper(".swiper_logo", {
+      spaceBetween: 50,
+      centeredSlides: true,
+<!--      direction: 'vertical',-->
+      mousewheel: true,
+      slidesPerView: 4,
+      loop: true,
+      speed: 1000,
+<!--      pagination: {-->
+<!--        el: ".swiper-pagination",-->
+<!--        clickable: true,-->
+<!--      },-->
+<!--      autoplay: {-->
+<!--        delay: 7000,-->
+<!--        disableOnInteraction: false,-->
+<!--      },-->
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+
+
+
+<!--    function changeBodyBg(color){-->
+<!--        document.body.style.background = color;-->
+<!--    }-->
+
+<!--    function changeHeadingBg(color){-->
+<!--        document.getElementById("dialog1").style.background = color;-->
+<!--    }-->
+<!--onclick="changeHeadingBg('#4274d4 url(/static/img/bg/mfua.png) no-repeat right top');"-->
+
+const labels = document.querySelectorAll(".accordion-item__label");
+const tabs = document.querySelectorAll(".accordion-tab");
+
+function toggleShow() {
+	const target = this;
+	const item = target.classList.contains("accordion-tab")
+		? target
+		: target.parentElement;
+	const group = item.dataset.actabGroup;
+	const id = item.dataset.actabId;
+
+	tabs.forEach(function(tab) {
+		if (tab.dataset.actabGroup === group) {
+			if (tab.dataset.actabId === id) {
+				tab.classList.add("accordion-active");
+			} else {
+				tab.classList.remove("accordion-active");
+			}
+		}
+	});
+
+	labels.forEach(function(label) {
+		const tabItem = label.parentElement;
+
+		if (tabItem.dataset.actabGroup === group) {
+			if (tabItem.dataset.actabId === id) {
+				tabItem.classList.add("accordion-active");
+			} else {
+				tabItem.classList.remove("accordion-active");
+			}
+		}
+	});
+}
+
+labels.forEach(function(label) {
+	label.addEventListener("click", toggleShow);
+});
+
+tabs.forEach(function(tab) {
+	tab.addEventListener("click", toggleShow);
+});
 
 </script>
 
