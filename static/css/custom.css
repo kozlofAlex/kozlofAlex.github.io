@@ -9,12 +9,36 @@
   --main-bg-color-2: #414a56;
   --main-color: #f2f2f2;
   --main-font-size: 16px;
+
+  --swiper-navigation-size: 44px;
+  --swiper-navigation-top-offset: 50%;
+  --swiper-navigation-sides-offset: 10px;
+  --swiper-navigation-color: var(--swiper-theme-color);
+
 }
 
 
+.swiper-button-next{
+    right:0px !important;
+    opacity: 0.5;
+}
+.swiper-button-prev{
+    left:0px !important;
+    opacity: 0.5;
+}
 
 
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size:20px !important;
+    font-weight: 700;
+    color: var(--main-bg-color-2) !important;
+}
 
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    opacity: 1;
+}
 
     body {
         background-color:var(--main-body-color);
@@ -127,10 +151,17 @@
         color:var(--main-color)
         transition: all 0.2s ease 0s;
     }
-
     .contacts a:hover {
         color:#fff;
     }
+
+    .contacts a i {opacity:0.7; transition: all 0.2s ease 0s;}
+    .contacts a:hover i {opacity:1;}
+
+    .contacts p {
+        margin-bottom: 10px;
+    }
+
 
     .formation {
 
@@ -195,11 +226,11 @@
 
 
 
-    .skills img,.skills svg  {
+    .skills img  {
         height: 25px;
-
-        fill: var(--main-color)
     }
+
+
 
     .upload {
         display: flex;
@@ -296,15 +327,22 @@
         transition: .4s
     }
 
+    .head_data {
+        color: hsl(214.29deg 33.91% 80.61%);
+    }
 
 
 
 
+    .company_text {
+        opacity: 0.8;
+        line-height: 1.6;
+    }
 
 
-
-
-
+    #skills_test li {
+        opacity: 0.9;
+}
 
 
 
@@ -493,7 +531,7 @@
     }
 
     .cards {
-        height: 14em;
+
         perspective: 1500px;
 
     }
@@ -513,7 +551,8 @@
         transform: rotateY(180deg);
     }
 
-    .front,
+
+
     .back {
         position: absolute;
         top: 0;
@@ -523,7 +562,10 @@
         backface-visibility: hidden;
         transform-style: preserve-3d;
         border-radius: 6px;
+        font-size:14px;
     }
+
+
 
     .front {
         background-color: #fff;
@@ -891,33 +933,19 @@ color: #fff;
 
 
 
-.icon-tab {
-    margin-bottom: 30px;
-    height: 100px;
-    text-align: center;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    text-align: center;
-    transition: .5s;
-    box-shadow: 8px 5px 10px rgba(255, 255, 255, 1), 10px 12px 25px rgba(0, 0, 0, 0.4);
-}
 
 
 
-.icon-tab span {transition: .2s;}
+
+.accordion-tab span {transition: .2s;}
 
 .ui span, .api span, .mobile span {opacity:0}
 .ui:hover span, .api:hover span, .mobile:hover span {opacity:1}
 
-.ui.active span, .api.active span, .mobile.active span {opacity:1}
+.ui.accordion-active span, .api.accordion-active span, .mobile.accordion-active span {opacity:1}
 
 
-.ui.active  {box-shadow: none; transform: translate(20px);}
-.api.active {box-shadow: none; transform: translate(20px);}
-.mobile.active {box-shadow: none; transform: translate(20px);}
+
 
 
 
@@ -1543,7 +1571,10 @@ color: #fff;
      line-height: 1.4;
 }
 
+.date {
+    padding-right:20px
 
+}
 
 
 
@@ -1553,9 +1584,10 @@ color: #fff;
 @media (max-width: 992px){
 .proj {
     opacity: 1;
-      }
+   }
 .cards {
-    font-size: calc(12px + (14 - 14) * ( (100vw - 480px) / ( 1024 - 480) ));
+    font-size: calc(12px + (15 - 12) * ((100vw - 320px) / (1920 - 320)));
+    height: 16em;
  }
 }
 
@@ -1567,7 +1599,14 @@ color: #fff;
 .swiper img{
     width:40%;
 }
+.head_name {
+    font-size: calc(30px + (60 - 30) * ((100vw - 320px) / (1920 - 320)));
+}
+.head_spec {
+        font-size: calc(25px + (50 - 25) * ((100vw - 320px) / (1920 - 320)));
     }
+
+}
 
 
 
