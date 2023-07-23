@@ -598,16 +598,15 @@
 
 
 .button_badge span {
-    display:inline-block;
+    display: inline-block;
     cursor: pointer;
-    padding: 10px 20px 10px;
+    padding: 4px;
     border: 2px solid #666;
     transition: all 0.2s ease;
     font-family: ui-monospace;
     background-color: #666;
     color: #fff;
-  overflow: hidden;
-  position: relative;
+    overflow: hidden;
 }
 
 
@@ -651,7 +650,7 @@
 
     .fancybox-stage .modal-body {
         background: #fafafa;
-
+            padding: 2em 0;
 
     }
 
@@ -1583,11 +1582,13 @@ color: #fff;
 
 @media (max-width: 992px){
 .proj {
-    opacity: 1;
+    display:none;
    }
-.cards {
+body {
     font-size: calc(12px + (15 - 12) * ((100vw - 320px) / (1920 - 320)));
-    height: 16em;
+}
+.cards {
+
  }
 }
 
