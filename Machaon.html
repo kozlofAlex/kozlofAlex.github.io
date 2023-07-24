@@ -20,7 +20,7 @@
 <body>
 
 <nav class="navbar navbar-expand-lg shadow-sm p-3 menu">
-    <div class="container" style="padding:0">
+    <div class="container px-0">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -62,8 +62,8 @@
 </nav>
 
 
- <div class="container-lg mb-5 mt-5">
-     <div class="container-fluid">
+ <div class="container mb-5 mt-5 px-0">
+     <div class="container-fluid px-0">
          <section class="accordion">
              <section class="accordion-tabs">
                  <button class="accordion-tab accordion-active position-relative ui" data-actab-group="0" data-actab-id="0" onclick="changeHeadingBg('#4274d4 url(/static/img/bg/mfua.png) no-repeat right top');">
@@ -94,38 +94,39 @@
 
              <section class="accordion-content">
                  <article class="accordion-item accordion-active" data-actab-group="0" data-actab-id="0">
-                     <h4 class="accordion-item__label px-5">Московский финансово-юридический университет</h4>
-                     <div class="accordion-item__container position-relative">
-                         <span class="position-absolute top-0 end-0 m-2 badge text-bg-danger"> UI </span>
+                     <h2 class="accordion-item__label px-5">Московский финансово-юридический университет</h2>
+                     <div class="accordion-item__container ">
+
                          <div class="row">
                              <div class="col-lg-4 px-3 px-lg-5">
                                  <img class="lazy img-fluid mb-5" src="" data-src="static/img/title/mfua_title.jpg" alt="" />
                              </div>
-                             <div class="col-lg-8 px-3 px-lg-5">
+                             <div class="col-lg-8 px-3 px-lg-5 position-relative">
+                                 <span class="position-absolute top-0 end-0 m-3 badge text-bg-danger"> UI </span>
                                  <div>
                                      <p class="fw-bold">Сайт: <a href="https://www.mfua.ru/">https://www.mfua.ru/</a></p>
                                      <ol class="check-list mb-3">
-                                         <li>Обеспечение качества разработки новой версии сайта университета МФЮА</li>
-                                         <li>Портал реализован на 1С-Битрикс, для более глубокого тестирования была изучена система и получены
+                                         <li class="opacity">Обеспечение качества разработки новой версии сайта университета МФЮА</li>
+                                         <li class="opacity">Портал реализован на 1С-Битрикс, для более глубокого тестирования была изучена система и получены
                                              <span class="mytooltip tooltip-effect-1">
-                                                 <span class="tooltip-item">сертификаты</span>
+                                                 <span class="tooltip-item" style="opacity:1;">сертификаты</span>
                                                  <span class="tooltip-content clearfix">
                                                      <a data-fancybox href="static/img/1c_adm_base.jpg"><img class="lazy" src="" data-src="static/img/1c_adm_base.jpg"></a>
                                                  </span>
                                              </span>
                                          </li>
-                                         <li>Проверка верстки (дизайн в Figma), функционала, поиск багов</li>
+                                         <li class="opacity">Проверка верстки (дизайн в Figma), функционала, поиск багов</li>
                                      </ol>
                                      <div class="row">
                                          <div class="col-md">
                                              <p class="fw-bold">Виды тестирования:</p>
-                                             <div class="button_badge">
-                                                 <span>Функциональное тестирование</span>
-                                                 <span>UI тестирование</span>
-                                                 <span>Тестирование доступности</span>
-                                                 <span>Тестирование локализации</span>
-                                                 <span>Кроссбраузерное тестирование</span>
-                                                 <span>Исследовательское тестирование</span>
+                                             <div class="button_badge mb-3">
+                                                 <button class="btn btn-outline-dark btn-sm">Функциональное&nbsp;тестирование</button>
+                                                 <button class="btn btn-outline-dark btn-sm">UI&nbsp;тестированиее</button>
+                                                 <button class="btn btn-outline-dark btn-sm">Тестирование&nbsp;доступностие</button>
+                                                 <button class="btn btn-outline-dark btn-sm">Тестирование&nbsp;локализациие</button>
+                                                 <button class="btn btn-outline-dark btn-sm">Кроссбраузерное&nbsp;тестированиее</button>
+                                                 <button class="btn btn-outline-dark btn-sm">Исследовательское&nbsp;тестированиее</button>
                                              </div>
                                          </div>
                                          <div class="col-md">
