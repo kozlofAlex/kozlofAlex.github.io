@@ -374,20 +374,9 @@
 
 }
 
-.wrap_macbook {
-    position: relative;
-    padding-bottom: 43%;
-    padding-top: 0;
-    height: 0;
-    overflow: hidden;
-    border-image: url('/MyPortfolio/static/img/macbook.png') 50 233 112 228 stretch stretch;
-    border-color: rgba(0, 0, 0, 0);
-    border-width: 27px 76px 55px 76px;
-    border-style: inset;
-}
-.macbook_img {
-    background-size: cover;
-    width: 100%;
+.title_img {
+    border: 20px solid rgba(191, 226, 255, 0.8);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7);
 
 }
 
