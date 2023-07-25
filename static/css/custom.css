@@ -134,8 +134,8 @@
 
     .icon {
         height: 25px;
-        transition: all 1s ease 0s;
-        fill: var(--main-body-color);
+        transition: all 0.5s ease 0s;
+
     }
 
     .git:hover {fill:#fff}
@@ -157,7 +157,7 @@
     .contacts a {
         display: block;
         text-align: left;
-        color:var(--main-color)
+        color:var(--main-color);
         transition: all 0.2s ease 0s;
     }
     .contacts a:hover {
@@ -180,15 +180,16 @@
 
     }
 
-    .formation img {
+    .formation svg {
         width:50px;
+        fill:var(--main-color);
         margin-right:10px;
+        filter: drop-shadow(2px 4px 6px black);
         transition: all 1s ease 0s;
-        filter: invert(.8);
     }
 
-    .formation img:hover {
-        filter: invert(1);
+    .formation svg:hover {
+        fill:#fff;
     }
 
     .examples {
@@ -261,8 +262,9 @@
     .img_up {
         width: 50px;
         height: 50px;
+        fill: var(--main-color);
         transition: all .5s ease;
-        filter: invert(1);
+
     }
 
     .sections {
@@ -415,8 +417,8 @@
 
 .title_img {
 
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7);
-    transition: border-width 0.3s;
+        box-shadow: 2px 10px 30px hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.375em;
 }
 
 
@@ -854,7 +856,10 @@ border:none;
 
     }
 
+.style {
 
+
+}
 
 
 
@@ -1767,14 +1772,14 @@ color: #fff;
 .dark-version .toggledark:before {
     top: 0;
     bottom: 0;
-    width: 28px;
-    left: 2px;
+    width: 25px;
+    left: 5px;
     content: "";
     height: 30px;
     margin: auto 0;
     position: absolute;
     transition: 0.5s;
-    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3e%3cpath fill='%23ffba0d' d='M256 160c-52.9 0-96 43.1-96 96s43.1 96 96 96 96-43.1 96-96-43.1-96-96-96zm246.4 80.5l-94.7-47.3 33.5-100.4c4.5-13.6-8.4-26.5-21.9-21.9l-100.4 33.5-47.4-94.8c-6.4-12.8-24.6-12.8-31 0l-47.3 94.7L92.7 70.8c-13.6-4.5-26.5 8.4-21.9 21.9l33.5 100.4-94.7 47.4c-12.8 6.4-12.8 24.6 0 31l94.7 47.3-33.5 100.5c-4.5 13.6 8.4 26.5 21.9 21.9l100.4-33.5 47.3 94.7c6.4 12.8 24.6 12.8 31 0l47.3-94.7 100.4 33.5c13.6 4.5 26.5-8.4 21.9-21.9l-33.5-100.4 94.7-47.3c13-6.5 13-24.7.2-31.1zm-155.9 106c-49.9 49.9-131.1 49.9-181 0-49.9-49.9-49.9-131.1 0-181 49.9-49.9 131.1-49.9 181 0 49.9 49.9 49.9 131.1 0 181z'/%3e%3c/svg%3e");
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3e%3cpath fill='%23ffba0d' d='M256 160c-52.9 0-96 43.1-96 96s43.1 96 96 96 96-43.1 96-96-43.1-96-96-96zm246.4 80.5l-94.7-47.3 33.5-100.4c4.5-13.6-8.4-26.5-21.9-21.9l-100.4 33.5-47.4-94.8c-6.4-12.8-24.6-12.8-31 0l-47.3 94.7L92.7 70.8c-13.6-4.5-26.5 8.4-21.9 21.9l33.5 100.4-94.7 47.4c-12.8 6.4-12.8 24.6 0 31l94.7 47.3-33.5 100.5c-4.5 13.6 8.4 26.5 21.9 21.9l100.4-33.5 47.3 94.7c6.4 12.8 24.6 12.8 31 0l47.3-94.7 100.4 33.5c13.6 4.5 26.5-8.4 21.9-21.9l-33.5-100.4 94.7-47.3c13-6.5 13-24.7.2-31.1zm-155.9 106c-49.9 49.9-131.1 49.9-181 0-49.9-49.9-49.9-131.1 0-181 49.9-49.9 131.1-49.9 181 0 49.9 49.9 49.9 131.1 0 181z'/%3e%3c/svg%3e");
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -1790,7 +1795,7 @@ color: #fff;
 }
 
 body.dark {
-    background: #000;
+    background: #000!important;
 }
 
 
@@ -1799,11 +1804,15 @@ body.dark {
 .dark *:before {
     color: #FFF!important;
     background-color: #000!important;
+    fill:#fff;
 }
 
-
-
-
+.dark .manual_skills, .dark .automated_skills, .dark .api_skills, .dark .bd_skills  {
+    background-color: #ffffffcc!important;
+}
+.dark .slider * {background: var(--main-color)!important;}
+.dark .accordion-tabs * {background: var(--main-color)!important;}
+.dark .navbar-toggler {    filter: invert(1);}
 
 
 
@@ -1874,7 +1883,6 @@ body.dark {
 .nav_soc{
     padding: 0.5em;
     display: flex;
-    background: var(--main-bg-color-2);
     border-radius: 50px;
     width: fit-content;
     justify-content: space-evenly;
