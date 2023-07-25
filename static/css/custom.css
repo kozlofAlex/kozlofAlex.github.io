@@ -73,7 +73,7 @@
 
     .head {
         font-family: 'IBM Plex Sans', Arial,sans-serif;
-        padding: 2em;
+
     }
 
     .head_info {
@@ -100,6 +100,9 @@
     .head_soc_link a {
         transition: all 1s ease 0s;
         filter: grayscale(1);
+        padding: 5px;
+        display: inline-block;
+        float: right;
     }
 
     .head_soc_link a:hover {
@@ -120,12 +123,13 @@
     }
 
     .profiles {
-        padding: 2em 1em;
+
         text-align: center;
     }
 
     .profiles a {
         padding: 8px;
+        display: inline-block;
     }
 
     .icon {
@@ -142,7 +146,7 @@
     .wa:hover {fill:#25D366}
 
     .info_data {
-        padding: 0em 2em;
+
         font-size: 15px;
     }
 
@@ -167,6 +171,10 @@
         margin-bottom: 10px;
     }
 
+
+    .contacts p:last-child {
+        margin-bottom: 0px;
+    }
 
     .formation {
 
@@ -353,9 +361,40 @@
 }
 
     .tab_img {
-        max-width:150px;
+
             height: 70px;
     }
+
+
+
+
+
+
+.op-border {
+    position: relative;
+}
+.op-border:before,
+.op-border:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 20px solid rgba(51, 122, 183, 0.4);
+    transition: border-width 0.2s;
+}
+.op-border:after {
+    border-width: 0;
+}
+.op-border:hover:after  {
+    border-width: 40px;
+}
+.op-border img {
+    width: 100%;
+}
+
+
 
 
 .desktop-wrapper {
@@ -375,10 +414,24 @@
 }
 
 .title_img {
-    border: 20px solid rgba(191, 226, 255, 0.8);
+
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7);
+    transition: border-width 0.3s;
+}
+
+
+.title_img:hover  {
 
 }
+
+
+
+
+
+
+
+
+
 
 
 
@@ -792,7 +845,7 @@ border:none;
 
     .back {
         transform: rotateY(180deg);
-        background: var(--main-bg-color-1);
+
 
     }
 
@@ -1822,7 +1875,7 @@ body.dark {
     padding: 0.5em;
     display: flex;
     background: var(--main-bg-color-2);
-    border-radius: 20px;
+    border-radius: 50px;
     width: fit-content;
     justify-content: space-evenly;
     align-items: center;
@@ -1866,6 +1919,9 @@ body {
 }
 .nav_soc a {
     display:none;
+}
+.head_soc_link a {
+        float: left;
 }
 .nav_col {
     display:block;
