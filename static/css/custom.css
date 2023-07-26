@@ -4,7 +4,7 @@
 /* #experience,#about_me,#education,#portfolio, #certificates {scroll-margin-top: 1.2rem;}*/
 
 :root {
-  --main-body-color: #eceff1;
+  --main-body-color: #f2f2f2;
   --main-bg-color-1: #f2f2f2;
   --main-bg-color-2: hsl(210 30% 24%);;
   --main-modal-bg-color: #ffffff;
@@ -44,6 +44,7 @@
     body {
 
         font-family: 'Open Sans', Arial,sans-serif;
+
 
     }
 
@@ -183,7 +184,6 @@
         width:50px;
         fill:var(--main-color);
         margin-right:10px;
-        filter: drop-shadow(2px 4px 6px black);
         transition: all 1s ease 0s;
     }
 
@@ -594,26 +594,37 @@
 
 
 
+.wrapper {
 
-
-
-.wrapper svg, .wrapper img {
-  width: 2em;
-    cursor: pointer;
-  margin: 0.3em;
-  transition: all 0.5s ease 0s;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+}
 
+.wrapper span {
+    cursor: pointer;
+    }
 
-/*.html:hover {fill: #E34F26}
+.wrapper svg {
+    width: 1em;
+
+    margin: 0.3em;
+}
+
+.html:hover {fill: #E34F26;color: #E34F26}
 .css:hover {fill: #1572B6}
 .android:hover {fill:#3DDC84}
 .postman:hover {fill:#FF6C37}
-.fiddler:hover {fill:#2cb044}
+.swagger:hover {fill:#85EA2D}
+.json:hover {fill:#000000}
+.redmine:hover {fill:#B32024}
+.trello:hover {fill:#0052CC}
+.figma:hover {fill:#F24E1E}
+.jira:hover {fill:#0052CC}
 
 
-*/
 
 
 
@@ -719,7 +730,11 @@ border:none;
   }
   .accordion-tabs .accordion-tab.accordion-active {
         background: transparent;
+
   }
+
+
+
   .accordion-item__label {
      display:none;
   }
@@ -752,6 +767,7 @@ border:none;
   border-radius: 10px;
   overflow: hidden;
   width: 100%;
+
 
 }
 @media (min-width: 600px) {
@@ -1745,7 +1761,7 @@ color: #fff;
 
 
     .menu {
-
+        background-color:var(--main-body-color);
     }
 
     .nav-link.active {
@@ -1758,7 +1774,7 @@ color: #fff;
     position: relative;
     display: inline-block;
     border-radius: 50px;
-    box-shadow: -10px -10px 15px rgba(255,255,255,0.5), 10px 10px 15px rgba(70,70,70,0.15);
+
 }
 .dark-version input {
     display: none;
@@ -1775,7 +1791,14 @@ color: #fff;
     align-items: center;
     background: #ffffff;
     border-radius: 50px;
+
 }
+.dark-version .toggledark:hover {
+        box-shadow: none;
+
+}
+
+
 .dark-version .toggledark:before {
 
     content: "\f0eb";
@@ -1794,6 +1817,7 @@ color: #fff;
 
 .dark-version input:checked + .toggledark {
     background: #000;
+    box-shadow: none;
 }
 .dark-version input:checked + .toggledark:before {
     color: #FF5C58!important;
@@ -1802,7 +1826,7 @@ color: #fff;
 
 
 body.dark {
-    background: #000!important;
+    background: #38444c!important;
 }
 
 
@@ -1810,20 +1834,25 @@ body.dark {
 .dark *:after,
 .dark *:before {
     color: #FFF!important;
-    background-color: #000!important;
+    background-color: #38444c!important;
     fill:#fff;
 }
 
 .dark .manual_skills, .dark .automated_skills, .dark .api_skills, .dark .bd_skills  {
     background-color: #ffffffcc!important;
 }
-.dark .slider * {background: var(--main-color)!important;}
-.dark .accordion-tabs * {background: var(--main-color)!important;}
-.dark .navbar-toggler {    filter: invert(1);}
+
+
+.dark .navbar-toggler {background-color: #e9e9e9!important;}
 
 
 
 
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,<?xml%20version=%221.0%22%20?%3E%3Csvg%20viewBox=%220%200%20512%20512%22%20xmlns=%22http://www.w3.org/2000/svg%22%3E%3Ctitle/%3E%3Cg%20data-name=%221%22%20id=%22_1%22%3E%3Cpath%20d=%22M441.13,166.52h-372a15,15,0,1,1,0-30h372a15,15,0,0,1,0,30Z%22/%3E%3Cpath%20d=%22M441.13,279.72h-372a15,15,0,1,1,0-30h372a15,15,0,0,1,0,30Z%22/%3E%3Cpath%20d=%22M441.13,392.92h-372a15,15,0,1,1,0-30h372a15,15,0,0,1,0,30Z%22/%3E%3C/g%3E%3C/svg%3E");
+    background-color: transparent!important;
+
+    }
 
 
 
