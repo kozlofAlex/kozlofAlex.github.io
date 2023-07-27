@@ -1832,9 +1832,9 @@ body.dark {
 .dark *,
 .dark *:after,
 .dark *:before {
-    color: #FFF!important;
+    color: #fff!important;
     background-color: #38444c!important;
-    fill:#fff;
+    fill:#ffffffa3;
 }
 
 .dark .manual_skills, .dark .automated_skills, .dark .api_skills, .dark .bd_skills  {
