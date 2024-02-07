@@ -622,11 +622,12 @@
 .trello:hover {fill:#0052CC}
 .figma:hover {fill:#F24E1E}
 .jira:hover {fill:#0052CC}
-
-
-
-
-
+.postgres:hover {fill:#4169E1}
+.kafka:hover {fill:#231F20}
+.argo:hover {fill:#EF7B4D}
+.testrail:hover {fill:#65C179}
+.charles:hover {fill:#231F20}
+.confluence:hover {fill:#172B4D}
 
 
 
